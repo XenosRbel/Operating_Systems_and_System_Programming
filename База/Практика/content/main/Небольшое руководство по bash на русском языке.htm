@@ -1,0 +1,782 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0049)http://www.opennet.ru/base/faq/shell_faq.txt.html -->
+<HTML><HEAD><TITLE>OpenNET: статья - Shell FAQ (shell faq bash)</TITLE>
+<META content="text/html; charset=koi8-r" http-equiv=Content-Type>
+<META name=KeyWords content="shell, faq, bash">
+<META name=GENERATOR content="MSHTML 9.00.8080.16413"></HEAD>
+<BODY bgColor=#dde1c2 text=#002040><LINK rel=stylesheet type=text/css 
+href="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/opennet3.css"><!--htdig_noindex-->
+<FORM method=get action=http://www.opennet.ru/search.shtml>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD style="BACKGROUND: url(/back.gif) #e9ead6 repeat-x left bottom" 
+    bgColor=#e9ead6 vAlign=bottom><A href="http://www.opennet.ru/"><IMG 
+      border=0 alt="The OpenNET Project" 
+      src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/opennet2.gif" 
+      width=249 height=60></A><BR></TD>
+    <TD bgColor=#b0b190 width=1><IMG alt="" 
+      src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/p.gif" 
+      width=1 height=1></TD>
+    <TD bgColor=#d9dac6 vAlign=top width=470 align=right>
+      <TABLE border=0 cellPadding=1 width=470>
+        <TBODY>
+        <TR>
+          <TD bgColor=#d9dac6 height=60><A 
+            href="http://click.opennet.ru/cgi-bin/opennet/hjump.cgi?securit8" 
+            target=_blank><IMG border=0 
+            src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/zlock_technosila.gif" 
+            width=468 height=60></A> </TD></TR></TBODY></TABLE></TD>
+    <TD bgColor=#b0b190 width=1><IMG alt="" 
+      src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/p.gif" 
+      width=1 height=1></TD>
+    <TD style="BACKGROUND: url(/back.gif) #e9ead6 repeat-x left bottom" 
+    bgColor=#e9ead6 width=40>&nbsp;</TD>
+    <TD bgColor=#b0b190 width=1><IMG alt="" 
+      src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/p.gif" 
+      width=1 height=1></TD>
+    <TD bgColor=#e9ead6 vAlign=top rowSpan=3 width=130 align=right><A 
+      href="http://www.lanbilling.ru/" target=_blank><IMG border=0 
+      src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/lanbilling6.gif" 
+      width=130 height=125></A> </TD></TR>
+  <TR bgColor=#b0b190>
+    <TD colSpan=6><IMG alt="" 
+      src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/p.gif" 
+      width=1 height=1></TD></TR>
+  <TR bgColor=#e9ead6>
+    <TD colSpan=5 align=center>
+      <TABLE width="100%">
+        <TBODY>
+        <TR>
+          <TD class=h rowSpan=2 width=300 noWrap><INPUT name=exclude 
+            value=index|/man.shtml type=hidden><A class=h 
+            href="http://www.opennet.ru/search.shtml"><U>Поиск</U></A>&nbsp;(<A 
+            class=h 
+            href="http://www.opennet.ru/keywords/">ключи</A>):&nbsp;<INPUT 
+            title='для поиска в google наберите "g фраза"' name=words> </TD>
+          <TD width="25%">&nbsp; <A class=h 
+            href="http://www.opennet.ru/prog/sml/"><B><U>ПРОГРАММЫ</U></B></A> 
+          </TD>
+          <TD width="25%"><A class=h 
+            href="http://www.opennet.ru/filebase.shtml"><B><U>СТАТЬИ</U></B></A> 
+          </TD>
+          <TD width="25%"><A class=h 
+            href="http://www.opennet.ru/tips/sml/"><B><U>СОВЕТЫ</U></B></A> </TD>
+          <TD width="25%"><A class=h 
+            href="http://www.opennet.ru/forum/"><B><U>ФОРУМ</U></B></A> </TD></TR>
+        <TR>
+          <TD>&nbsp; <A class=h 
+            href="http://wiki.opennet.ru/"><B><U>WIKI</U></B></A> </TD>
+          <TD class=h><A class=h 
+            href="http://www.opennet.ru/opennews/"><B><U>НОВОСТИ</U></B></A> (<A 
+            class=h href="http://www.opennet.ru/news/opennet.shtml">+</A>) </TD>
+          <TD><A class=h 
+            href="http://www.opennet.ru/man.shtml"><B><U>MAN'ы</U></B></A> </TD>
+          <TD><A class=h 
+            href="http://www.opennet.ru/docs/"><B><U>ДОКУМЕНТАЦИЯ</U></B></A> 
+        </TD></TR></TBODY></TABLE></TD>
+    <TD bgColor=#b0b190 width=1><IMG alt="" 
+      src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/p.gif" 
+      width=1 height=1></TD></TR>
+  <TR bgColor=#b0b190>
+    <TD colSpan=7><IMG alt="" 
+      src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/p.gif" 
+      width=1 height=2></TD></TR></TBODY></TABLE>
+<DIV style="TEXT-ALIGN: left; WIDTH: 279px; PADDING-RIGHT: 60px; FLOAT: left" 
+id=adv><A href="http://www.ip-as.ru/" target=_blank><IMG border=0 
+src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/ipas3.gif" 
+width=279 height=40></A></DIV>
+<DIV 
+style="POSITION: absolute; WIDTH: 470px; MARGIN-LEFT: -235px; PADDING-TOP: 10px; LEFT: 50%" 
+id=adv2>
+<SCRIPT language=javascript type=text/javascript><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=137477&bn=1&target=blank&bt=1&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=468 height=60 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></SCRIPT>
+<NOSCRIPT></NOSCRIPT></DIV>
+<DIV style="WIDTH: 279px; FLOAT: right" id=adv3><A href="http://job.samsung.ru/" 
+target=_blank><IMG border=0 
+src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/samsung_line8.gif" 
+width=279 height=40></A></DIV>
+<DIV style="CLEAR: both"></DIV><BR>
+<SCRIPT language=JavaScript><!--
+d=document;a='';r=escape(d.referrer);a+=';r='+r;
+js=10; d.write('<img src="http://top.list.ru/counter'+
+'?id=77689;js='+js+a+';rand='+Math.random()+
+'" alt="" height=1 width=1>');
+if(js>11)d.write('<'+'!-- ')//--></SCRIPT>
+<NOSCRIPT></NOSCRIPT></FORM><!--/htdig_noindex-->
+<SCRIPT language=JavaScript 
+src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/print.js"></SCRIPT>
+
+<CENTER>
+<H3><FONT color=#000090>Shell FAQ (shell faq bash) </FONT></H3></CENTER><BR>
+<TABLE border=0 cellSpacing=0 cellPadding=1 width="100%" bgColor=#b0b190>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" bgColor=#e9ead6 
+      align=center>
+        <COLGROUP>
+        <COL span=5 width=5>
+        <TBODY>
+        <TR align=center>
+          <TD><SMALL><A 
+            href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=shell_faq.txt&amp;ref=prev">&lt;&lt; 
+            Предыдущая</A></SMALL></TD>
+          <TD><SMALL><A 
+            href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=shell_faq.txt&amp;ref=index">ИНДЕКС</A></SMALL></TD>
+          <TD><SMALL><A 
+            href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=shell_faq.txt&amp;ref=edit">Правка</A></SMALL></TD>
+          <TD><SMALL><A 
+            href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=shell_faq.txt&amp;ref=raw">src</A> 
+            / <A onclick="pr('none');" 
+            href="http://www.opennet.ru/base/faq/shell_faq.txt.html#">Печать</A></SMALL></TD>
+          <TD><SMALL><A 
+            href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=shell_faq.txt&amp;ref=next">Следующая 
+            &gt;&gt;</A></SMALL></TD></TR>
+        <TR bgColor=#b0b190>
+          <TD colSpan=5><IMG alt="" 
+            src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/p.gif" 
+            width=1 height=2></TD></TR></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><PRE><B>Ключевые слова:</B> <A href="http://www.opennet.ru/cgi-bin/opennet/ks.cgi?mask=shell">shell</A>, <A href="http://www.opennet.ru/cgi-bin/opennet/ks.cgi?mask=faq">faq</A>, <A href="http://www.opennet.ru/cgi-bin/opennet/ks.cgi?mask=bash">bash</A>,  (<A href="http://www.opennet.ru/cgi-bin/opennet/ks.cgi?mask=shell%20faq%20bash">найти похожие документы</A>)<BR>
+<FONT color=#0000c0>From: Vsevolod Stakhov &lt;cebka[at]jet[dot]msk[dot]su&gt;</FONT>
+<FONT color=#0000c0>Date: Mon, 3 Jan 2006 14:31:37 +0000 (UTC)</FONT>
+<FONT color=#0000c0><B>Subject: Shell FAQ</B></FONT>
+
+Оригинал: <A href="http://cebka.pp.ru/my/shell-faq.txt">http://cebka.pp.ru/my/shell-faq.txt</A>
+
+<FONT color=#d00000>&gt; В чем состоят отличия различных оболочек?</FONT>
+
+Сравнительная таблица наиболее известных оболочек может быть найдена на
+http://www.looking-glass.org/shell.html. Одной из наиболее функциональных
+оболочек является zsh(хотя за функциональность приходится расплачиваться
+некоторой потерей быстродействия). Для большинства операций обычно
+достаточно bash или tcsh. Вообще, существует два типа оболочек -
+произошедшие от Bourne Shell(sh, bash, ksh, zsh) и произошедшие от C
+shell (csh, tcsh). Отличия в синтаксисе оболочек весьма существенны.
+Оболочки, произошедшие от Bourne shell, чаще используются для
+программирования, т.к. язык c-shell далёк от совершенства(хотя я бы не
+сказал, что tcsh многим уступает в возможностях программирования
+bash, но исторически csh обладал кучей огрехов, поэтому сейчас более
+распространён синтаксис Bourne shell). Оболочки c-shell всегда являлись
+больше интерактивными оболочками, но язык их скриптов намного ближе тем,
+кто знаком с языком С. К сожалению, русской документации по C-shell я не
+встречал. Может быть, в скором времени этот пробел будет заполнен.
+
+
+<FONT color=#d00000>&gt; Существует ли руководство по bash на русском языке?</FONT>
+
+Да, есть: <A href="http://ln.com.ua/~openxs/projects/man/solaris8/bash.html">http://ln.com.ua/~openxs/projects/man/solaris8/bash.html</A>
+http://www.citforum.ru/programming/shell/index.shtml
+
+
+<FONT color=#d00000>&gt; Как работают текстовые замены и подстановки в bash? </FONT>
+
+Вообще, текстовые замены и подстановки - это одна из самых мощных
+возможностей bash(в оригинальной sh эти
+возможности сильно урезаны). Существует несколько типов текстовых
+подстановок командной строки:
+
+фигурные скобки - всё, что находится в командной строке в фигурных
+скобках {} расценивается как шаблон для
+поиска, объединённый командой ИЛИ: file{1,2} заменится на file1 file2 chown
+root /usr/{ucb/{ex,edit},lib/{ex?.?*,how_ex}
+
+подстановка $. Все, что идёт после данного символа расценивается как
+значение переменной, или результат выполнения команды. Также полезно
+окружать подстановку после $ фигурными скобками(отделение от остальной
+части текста): echo "${HOME} - this is where youк files are". echo ${`date`}
+
+подстановка процессов
+
+подстановка имён файлов
+
+разбиение переменных на слова. По умолчанию интерпретатор разбивает все
+переменные и результаты выполнения команд, не заключённые в двойные
+кавычки, на слова, что позволяет обрабатывать переменные в циклах по
+полям. 
+
+Существует достаточно много дополнительных параметров подстановки(например,
+подстановка подстрок или установка переменной по умолчанию), но охватить
+всё в рамках данного вопроса явно не удастся, за дополнительными сведениями
+обращайтесь к документу <A href="http://ln.com.ua/~openxs/projects/man/solaris8/bash.html">http://ln.com.ua/~openxs/projects/man/solaris8/bash.html</A>#expansion
+
+
+<FONT color=#d00000>&gt; В чем отличие различных кавычек в shell?</FONT>
+
+Кавычки - это очень полезный инструмент. Различые виды кавычек применяются
+в различных случаях(учтите, кавычки сохраняют своё значение и в
+интерактивной оболочке). Итак, какие бывают кавычки:
+двойные(") - внутри таких кавычек происходят все текстовые подстановки(см.
+ниже), в том числе и подстановка обратных кавычек. Например echo "$PATH"
+выведет значение переменной PATH, а echo "${PATH} `date`" выведет значение
+PATH, поставит пробел и подставит результат выполнения программы date;
+одинарные(') - внутри одинарных кавычек всё печатается, как есть, без
+подстановок: echo '$PATH' выведет $PATH
+обратные(`) - подставление вывода указанной в кавычках команды, также
+выполняются все подстановки: `ps aux | grep $1` - выведет список заданных в
+аргументе $1 процессов. Учтите, что результатом могут быть несколько строк.
+
+<FONT color=#d00000>&gt; Как экранировать кавычки?</FONT>
+
+Вопрос заслуживает отдельного внимания, например, когда внутри кавычек есть
+другие кавычки:
+двойные(") - экранируются обратным слэшем, например echo "\"" выведет просто символ ";
+одинарные(') - обратный слэш не спасает - приходится использовать
+восьмеричный код символа 047: echo '\047$PATH\047' выведет '$PATH', в
+Linux необходимо для echo указать опцию -е;
+обратные(`) - экранируются аналогично двойным, т.е. обратным слэшем.
+
+
+<FONT color=#d00000>&gt; Как выполнять арифметические действия над переменными?</FONT>
+
+Все переменные в shell являются строками, но существует возможность оценки
+числовых выражений. Для объявления числовой переменной можно
+воспользоваться командой let:
+<FONT color=#461b7e>
+        let a=6
+        let b=a*2
+        let c=a%4
+        let d=c/2
+        echo a=$a
+        echo b=$b
+        echo c=$c
+        echo d=$d
+
+</FONT>
+Результат работы:
+<FONT color=#461b7e>
+        a=6
+        b=12
+        c=2
+        d=1
+
+</FONT>
+Второй способ - оценка cтроковых выражений командой expr:
+<FONT color=#461b7e>
+        $a=2
+        $b=2
+        expr $a + $b
+
+</FONT>
+Выведет число 4. Заметьте, что просто $a + $b будет преобразовано в 2 + 2.
+
+
+<FONT color=#d00000>&gt; Существует ли простой способ программно создать файл, содержащий несколько строк?</FONT>
+
+Да, существует. Это очень часто употребляемый прием для создания
+многострочных файлов с возможностью подстановки переменных скрипта:
+<FONT color=#461b7e>
+        cat &gt; cfg &lt;&lt;EOT
+        name = $a
+        And this file was generated with $EDITOR
+        many other lines...
+        ...
+        EOT
+
+</FONT>
+<FONT color=#d00000>&gt; Как присвоить переменной результат выполнения команды?</FONT>
+
+Вопрос можно истолковать по-разному. Если имеется в виду присвоить
+переменной код завершения программы, то используется следующий синтаксис:
+<FONT color=#461b7e>
+        ./some_prog
+        RESULT=$?	
+
+</FONT>
+На практике чаще используется проверка правильности выполнения последней
+команды с помощью переменной $?(при успешном завершении обычно возвращается нуль):
+<FONT color=#461b7e>
+        ./some_prog
+        if [ $? ne 0 ]
+        then
+                echo Bad exit code
+                exit
+        fi
+
+</FONT>
+У некоторых возникнет искушение сделать нечто подобное:
+<FONT color=#461b7e>
+        echo Error!!!
+        exit $?
+
+</FONT>
+Но, к сожалению, такой вариант всегда возвращает нуль, т.к. последней
+командой было echo. В качестве решения проблемы можно присваивать код
+завершения сомнительной программы некой переменной, а потом безбоязненно с
+ней обращаться(учтите, операторы проверки [] также изменяют код
+завершения).
+
+Если же в данном вопросе имелся в виду не код завершения программы, а то
+что было выведено программой в stdout, то необходимо заключить команду в
+обратные кавычки:
+<FONT color=#461b7e>
+        DATE=`date`
+
+</FONT>
+<FONT color=#d00000>&gt; Как прочитать несколько строк с терминала?</FONT>
+
+Для этого используется цикл while с командой read. Стандартное решение:
+<FONT color=#461b7e>
+        while read line
+        do
+                echo $line
+        done
+
+</FONT>
+Можно выполнять построчное чтение не с терминала, а из файла - для этого
+достаточно выполнить перенаправление цикла:
+<FONT color=#461b7e>
+        while read line
+        do
+                echo $line
+        done &lt; /etc/passwd
+
+</FONT>
+C другой стороны для операции со строками лучше всего использовать awk.
+Очень удобно использовать awk для
+выбора некоторых слов из строки, но программирование в awk - это большая
+отдельная тема.
+
+
+<FONT color=#d00000>&gt; Как узнать, в командном или интерактивном режиме работает shell?</FONT>
+
+Можно проверить специальную переменную $- или переменную $PS1. Для первого
+случая можно использовать скрипт, подобный такому:
+<FONT color=#461b7e>
+        case $- in
+        *i*) # Интерактивный режим
+             ;;
+        *)   # Неинтерактивный режим
+             ;;
+        esac
+
+</FONT>
+Проверка режима оказывается полезной при написании сценариев, когда
+неизвестно, необходимо ли выводить в stdout или stderr какие-либо
+данные(нет смысла в неинтерактивном режиме). Также полезно применять в
+инициализационных сценариях оболочек(например, чтобы выполнение отдельных
+команд через ssh или rsh не вызывало запуск кучи вспомогательных программ).
+
+Для оболочки C(csh, tcsh) синтаксис проверки будет несколько иным:
+<FONT color=#461b7e>
+        if(! $?prompt)
+                # Неинтерактивная оболочка
+                exit
+        else
+                # Интерактивная оболочка
+                echo Hi
+                exit
+        endif
+
+</FONT>
+<FONT color=#d00000>&gt; Что означают перенаправления в циклах?</FONT>
+
+Смысл такой: после каждого шага цикла значение переменной цикла считывается
+или передаётся в конвейер. Пример удаления всех исполняемых файлов, если им
+соответствует файлы .c(т.е. удаление объектных файлов):
+<FONT color=#461b7e>
+        for x in *; do  [ -x $x -a -f $x.c ] &amp;&amp; echo $x; done | xargs rm -f 
+
+</FONT>
+Заметьте, что если последняя команда цикла ложна, то перенаправления
+переменной цикла не происходит. В данном примере используется именно эта
+возможность.
+
+
+<FONT color=#d00000>&gt; А почему большинство скриптов написано на Bourne Shell? Почему моя любимая</FONT>
+<FONT color=#d00000>&gt; tcsh обойдена вниманием? </FONT>
+
+Скажу к слову, tcsh - это и моя любимая оболочка, я работаю в ней, как в
+интерактивной, но скрипты всегда пишу в Bourne Shell. Причина проста:
+скрипты на Bourne shell больше распространены, и любому администратору
+необходимо знать эту оболочку, по ней есть много документации, в том числе
+и на русском языке. Программировать в C-shell несколько привычнее, но
+многочисленные ошибки реализации языка(особенно в клаccическом csh) сильно
+затрудняют работу. В частности не очень удобен механизм перенаправлений:
+sh:
+<FONT color=#461b7e>
+        mpg123 ./*.mp3 &gt; /dev/null 2&gt;&amp;1
+
+</FONT>
+csh:
+<FONT color=#461b7e>
+        (mpg123 ./*.mp3 &gt; /dev/null) &gt;&amp; /dev/null
+
+</FONT>
+В оболочке C практически невозможно нормально разделить stdout и stderr.
+
+
+<FONT color=#d00000>&gt; Где можно найти полное описание встроенных переменных bash?</FONT>
+
+http://ln.com.ua/~openxs/projects/man/solaris8/bash.html#variables
+
+
+<FONT color=#d00000>&gt; В моей системе нет команды killall. Что можно придумать?  </FONT>
+
+Пишем примерно такой сценарий: 
+<FONT color=#461b7e>
+        #!/bin/sh 
+        kill $1 `ps ax | grep $2 | awk '{print $1}'| sed 's/\n/ /g'` 
+
+</FONT>
+Вызываем скрипт так: killall -9 ftpd Один
+минус: убивается больше процессов, чем нужно, т.к. grep находит сам себя и
+пытается убить лишние процессы. Хотя это не смертельно, но если такого
+процесса нет, то программа всё равно выводит Killed. Поэтому вывод надо
+дополнительно фильтровать, но мне было вполне достаточно такого варианта.
+
+
+<FONT color=#d00000>&gt; Как найти в /etc/passwd записи с нулевым UID(кроме root)?</FONT>
+<FONT color=#461b7e>
+        #/bin/sh
+        for i in `awk -F: '{if($3 == "0" &amp;&amp; $1 != "root") print $1}' /etc/passwd`
+        do 
+        mail -s "Strange user!" root@mymail.net &lt;&lt; EOT
+        There is a user ${i} that has uid = 0
+        `date`
+        EOT
+
+        done
+
+</FONT>
+Удобно добавить этот скрипт в crontab(учтите, что используется gawk -
+параметр -F могут не понять старые версии awk, в таком случае внутри awk
+скрипта надо установить FS=":").
+
+
+<FONT color=#d00000>&gt; Как работать с интерактивными программами, например, telnet или ftp? </FONT>
+
+Вопрос не относится непосредственно к shell, для решения этой задачи удобно
+использовать специальный пакет функций tcl - expect (<A href="http://expect.nist.gov/">http://expect.nist.gov/</A>). 
+Данный пакет содержит функции 
+        spawn - породить процеcc 
+        send - послать процессу входные данные
+        expect - в зависимости от выводимых данных послать процессу некие входные данные
+
+Простой пример - получение файлов по ftp в автоматическом режиме:
+<FONT color=#461b7e>
+        spawn /usr/bin/ftp ftp.myhost.ru
+        expect{
+                  "Name*: "	{send "username\r"}
+                  "Password:"	{send "user_password\r"}
+                  "failed"	{puts "Can`t login."; exit 1}
+        }
+        send "lcd /etc\r"
+        expect "ftp&gt; "	{send "cd /pub/etc\r"}
+        expect "ftp&gt; "  {send "get passwd\r"}
+        expect "ftp&gt; "  {send "quit\r"}
+        exit 0
+
+</FONT>
+Работа с telnet и ssh также не должна вызвать затруднений(кроме автокоманд
+на сервере, выполняемых при запуске командного интерпретатора). А вообще,
+expect - это очень полезный инструмент, позволяющий автоматизировать
+интерактивные операции(учтите, что для его работы необходим tcl).
+
+
+<FONT color=#d00000>&gt; Будет ли продолжение данного FAQ?</FONT>
+
+Задавайте ваши вопросы мне: vsevolod at highsecure.ru. Наиболее
+интересные войдут в этот список.
+
+
+</PRE><BR>
+<TABLE border=0 cellSpacing=0 cellPadding=1 width="100%" bgColor=#b0b190>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" bgColor=#e9ead6 
+      align=center>
+        <COLGROUP>
+        <COL span=5 width=5>
+        <TBODY>
+        <TR align=center>
+          <TD><SMALL><A 
+            href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=shell_faq.txt&amp;ref=prev">&lt;&lt; 
+            Предыдущая</A></SMALL></TD>
+          <TD><SMALL><A 
+            href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=shell_faq.txt&amp;ref=index">ИНДЕКС</A></SMALL></TD>
+          <TD><SMALL><A 
+            href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=shell_faq.txt&amp;ref=edit">Правка</A></SMALL></TD>
+          <TD><SMALL><A 
+            href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=shell_faq.txt&amp;ref=raw">src</A> 
+            / <A onclick="pr('none');" 
+            href="http://www.opennet.ru/base/faq/shell_faq.txt.html#">Печать</A></SMALL></TD>
+          <TD><SMALL><A 
+            href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=shell_faq.txt&amp;ref=next">Следующая 
+            &gt;&gt;</A></SMALL></TD></TR>
+        <TR bgColor=#b0b190>
+          <TD colSpan=5><IMG alt="" 
+            src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/p.gif" 
+            width=1 height=2></TD></TR></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR>
+<TABLE border=0 cellSpacing=0 cellPadding=1 width="100%" bgColor=#b0b190>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE border=0 cellSpacing=0 cellPadding=5 width="100%" 
+        bgColor=#e9ead6><TBODY>
+        <TR bgColor=#c7cbb1>
+          <TD>
+            <TABLE width="100%">
+              <TBODY>
+              <TR>
+                <TD><FONT color=#000090><B>Обсуждение</B></FONT></TD>
+                <TD style="FONT-SIZE: 0.5em" align=right>[ <A 
+                  style="COLOR: rgb(255,102,0)" 
+                  href="http://www.opennet.ru/cgi-bin/openforum/rss_forum.cgi?forum=vsluhforumID3&amp;om=13985">RSS</A> 
+                  ]</TD></TR></TBODY></TABLE></TD></TR>
+        <TR bgColor=#e9ead6>
+          <TD id=ln13985 class=ctxt>
+            <TABLE class=cblk>
+              <TBODY>
+              <TR>
+                <TD width="3%">&nbsp;</TD>
+                <TD width="97%"><A name=1></A>
+                  <TABLE class=cblk>
+                    <TBODY>
+                    <TR>
+                      <TD class=chdr>
+                        <LI><A 
+                        href="http://www.opennet.ru/openforum/vsluhforumID3/13985.html#1">1</A>, 
+                        <A 
+                        href="http://www.opennet.ru/~BigShadow">BigShadow</A>, 
+                        13:17, 22/03/2006 [<A 
+                        href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&amp;om=13985&amp;forum=vsluhforumID3&amp;omm=1">ответить</A>] 
+                        [<A 
+                        href="http://www.opennet.ru/openforum/vsluhforumID3/13985.html#1">смотреть 
+                        все</A>] </LI></TD>
+                      <TD class=chdr2><SPAN id=vt_2_3_13985_1 class=vt_d2><A 
+                        title=Одобряю onclick="return o_vote('2_3_13985_1',1);" 
+                        href="http://www.opennet.ru/base/faq/shell_faq.txt.html#"><SPAN 
+                        class=vt_p>+</SPAN></A>/<A title=Осуждаю 
+                        onclick="return o_vote('2_3_13985_1',-1);" 
+                        href="http://www.opennet.ru/base/faq/shell_faq.txt.html#"><SPAN 
+                        class=vt_m>&#8211;</SPAN></A></SPAN></TD></TR>
+                    <TR>
+                      <TD class=ctxt><FONT color=#606060>&gt; Как узнать, в 
+                        командном или интерактивном режиме работает 
+                        shell?</FONT> 
+                        <P>еще вариант: <BR>у команды test есть опция -t</P></TD>
+                      <TD vAlign=top rowSpan=2 width=55 align=right><A 
+                        href="http://www.opennet.ru/~BigShadow"><IMG border=0 
+                        src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/p(1).gif" 
+                        width=40 height=40></A></TD></TR>
+                    <TR>
+                      <TD>&nbsp;</TD></TR></TBODY></TABLE>
+                  <DIV id=actshow_0_1></DIV><A name=2></A>
+                  <TABLE class=cblk>
+                    <TBODY>
+                    <TR>
+                      <TD class=chdr>
+                        <LI><A 
+                        href="http://www.opennet.ru/openforum/vsluhforumID3/13985.html#2">2</A>, 
+                        <A href="http://www.opennet.ru/~PAnk">PAnk</A>, 19:20, 
+                        01/04/2008 [<A 
+                        href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&amp;om=13985&amp;forum=vsluhforumID3&amp;omm=2">ответить</A>] 
+                        [<A 
+                        href="http://www.opennet.ru/openforum/vsluhforumID3/13985.html#2">смотреть 
+                        все</A>] </LI></TD>
+                      <TD class=chdr2><SPAN id=vt_2_3_13985_2 class=vt_d2><A 
+                        title=Одобряю onclick="return o_vote('2_3_13985_2',1);" 
+                        href="http://www.opennet.ru/base/faq/shell_faq.txt.html#"><SPAN 
+                        class=vt_p>+</SPAN></A>/<A title=Осуждаю 
+                        onclick="return o_vote('2_3_13985_2',-1);" 
+                        href="http://www.opennet.ru/base/faq/shell_faq.txt.html#"><SPAN 
+                        class=vt_m>&#8211;</SPAN></A></SPAN></TD></TR>
+                    <TR>
+                      <TD class=ctxt>Сущиствует файлы на сервере скажим архивы 
+                        и их требуется с одного сервака перекинуть на другой по 
+                        сети можно ли написать в bash и закинуть скажем вв 
+                        расписания что бы они сами скажем 4 раза в день 
+                        копировались вне зависемости подключился админ или 
+                        другой пользователь дан только ip и логин ? <BR></TD>
+                      <TD vAlign=top rowSpan=2 width=55 align=right><A 
+                        href="http://www.opennet.ru/~PAnk"><IMG border=0 
+                        src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/p(2).gif" 
+                        width=40 height=40></A></TD></TR>
+                    <TR>
+                      <TD>&nbsp;</TD></TR></TBODY></TABLE>
+                  <DIV id=actshow_0_2>
+                  <TABLE class=cblk>
+                    <TBODY>
+                    <TR>
+                      <TD class=line width="3%">&nbsp;</TD>
+                      <TD width="97%"><A name=3></A>
+                        <TABLE class=cblk>
+                          <TBODY>
+                          <TR>
+                            <TD class=chdr>
+                              <LI><A 
+                              href="http://www.opennet.ru/openforum/vsluhforumID3/13985.html#3">3</A>, 
+                              <A 
+                              href="http://www.opennet.ru/~%F7%C9%D4%C1%CC%C9%CA">Виталий</A>, 
+                              10:57, 17/09/2008 [<A 
+                              href="http://www.opennet.ru/base/faq/shell_faq.txt.html#2">^</A>] 
+                              [<A 
+                              href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&amp;om=13985&amp;forum=vsluhforumID3&amp;omm=3">ответить</A>] 
+                              [<A 
+                              href="http://www.opennet.ru/openforum/vsluhforumID3/13985.html#3">смотреть 
+                              все</A>] </LI></TD>
+                            <TD class=chdr2><SPAN id=vt_2_3_13985_3 
+                              class=vt_d2><A title=Одобряю 
+                              onclick="return o_vote('2_3_13985_3',1);" 
+                              href="http://www.opennet.ru/base/faq/shell_faq.txt.html#"><SPAN 
+                              class=vt_p>+</SPAN></A>/<A title=Осуждаю 
+                              onclick="return o_vote('2_3_13985_3',-1);" 
+                              href="http://www.opennet.ru/base/faq/shell_faq.txt.html#"><SPAN 
+                              class=vt_m>&#8211;</SPAN></A></SPAN></TD></TR>
+                          <TR>
+                            <TD class=ctxt>можно <BR></TD>
+                            <TD vAlign=top rowSpan=2 width=55 align=right><IMG 
+                              src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/p.gif" 
+                              width=40 height=40></TD></TR>
+                          <TR>
+                            <TD>&nbsp;</TD></TR></TBODY></TABLE><A name=4></A>
+                        <TABLE class=cblk>
+                          <TBODY>
+                          <TR>
+                            <TD class=chdr>
+                              <LI><A 
+                              href="http://www.opennet.ru/openforum/vsluhforumID3/13985.html#4">4</A>, 
+                              <A 
+                              href="http://www.opennet.ru/~piroman">piroman</A>, 
+                              20:02, 25/09/2008 [<A 
+                              href="http://www.opennet.ru/base/faq/shell_faq.txt.html#2">^</A>] 
+                              [<A 
+                              href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&amp;om=13985&amp;forum=vsluhforumID3&amp;omm=4">ответить</A>] 
+                              [<A 
+                              href="http://www.opennet.ru/openforum/vsluhforumID3/13985.html#4">смотреть 
+                              все</A>] </LI></TD>
+                            <TD class=chdr2><SPAN id=vt_2_3_13985_4 
+                              class=vt_d2><A title=Одобряю 
+                              onclick="return o_vote('2_3_13985_4',1);" 
+                              href="http://www.opennet.ru/base/faq/shell_faq.txt.html#"><SPAN 
+                              class=vt_p>+</SPAN></A>/<A title=Осуждаю 
+                              onclick="return o_vote('2_3_13985_4',-1);" 
+                              href="http://www.opennet.ru/base/faq/shell_faq.txt.html#"><SPAN 
+                              class=vt_m>&#8211;</SPAN></A></SPAN></TD></TR>
+                          <TR>
+                            <TD class=ctxt>добавь запись в cron <BR>и вызывай 
+                              свой скрипт хоть 4 раза в день, хоть раз в 1 месяц 
+                              <BR></TD>
+                            <TD vAlign=top rowSpan=2 width=55 align=right><IMG 
+                              src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/p.gif" 
+                              width=40 height=40></TD></TR>
+                          <TR>
+                            <TD>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE>
+            <DIV></DIV><BR></TD></TR>
+        <TR bgColor=#c7cbb1>
+          <TD><FONT color=#000090><B>Ваш комментарий</B></FONT></TD></TR>
+        <TR bgColor=#dde1c2>
+          <TD>
+            <FORM method=post 
+            action=http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi><INPUT 
+            name=om value=13985 type=hidden> <INPUT name=key_section value=topic 
+            type=hidden> <INPUT name=key_sub value=faq type=hidden> <INPUT 
+            name=key_item value=shell_faq type=hidden> <INPUT name=forum 
+            value=vsluhforumID3 type=hidden> <INPUT name=omm type=hidden> <INPUT 
+            name=az value=a_mesg type=hidden> 
+            Имя:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <INPUT 
+            name=name size=30><BR>E-Mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <INPUT name=email size=30><BR>Заголовок: <INPUT name=subject 
+            maxLength=60 value="Shell FAQ (shell faq bash)" 
+            size=30><BR>Текст:<BR><TEXTAREA wrap=virtual cols=50 rows=8 name=body></TEXTAREA><BR><INPUT name=post value=Отправить type=submit> 
+            </FORM></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR><!--htdig_noindex--><BR>
+<TABLE id=ibm_adv>
+  <TBODY>
+  <TR vAlign=top>
+    <TD width=383><IFRAME height=240 border=0 
+      src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/erle.htm" 
+      frameBorder=0 width=383 name=ibm scrolling=no target="_blank"></IFRAME></TD>
+    <TD>
+      <TABLE border=1 cellSpacing=0 cellPadding=2 width="95%" bgColor=#441144 
+      align=center>
+        <TBODY>
+        <TR>
+          <TD bgColor=#ffffff align=center><A 
+            title="Подписка на журнал Linux Format" 
+            href="http://www.linuxcenter.ru/shop/books-and-magazines/Linux-Format/?sid=nP5OTFA1" 
+            target=_blank><FONT color=#5b1900 size=4 
+            face=sans-serif><B>Подпишитесь на печатную версию Linux Format и 
+            получите диск с архивом в подарок!</B> </FONT></A></TD></TR>
+        <TR>
+          <TD bgColor=#ffffff align=left>
+            <P width=20% face="sans-serif" color="#5b1900" size="2"><A 
+            href="http://www.linuxcenter.ru/shop/books-and-magazines/Linux-Format/?sid=nP5OTFA1" 
+            target=_blank><IMG title="Подписка на Linux Format" border=0 
+            hspace=8 align=left 
+            src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/id5773.jpg" 
+            width=130 height=130> </A>Все подписавшиеся на печатную версию Linux 
+            Format получат в подарок диск с архивом всех номеров журнала Linux 
+            Format за 2005-2010 года (64 номера). </P>
+            <P>Преимущества подписки на печатную версию журнала: </P>
+            <UL>
+              <LI>8Gb свежего ПО и дистрибутивов каждый месяц на двухстороннем 
+              DVD 
+              <LI>Архив журнала Linux Format - это все номера журнала за 
+              2005-2010 года, в формате PDF. 
+              <LI>Возможность скачать платную версию в PDF до выхода печатной 
+              версии из типографии! 
+              <LI>Участие в розыгрышах ценных призов </LI></UL>
+            <P>Имея на руках Подшивку LXF, вы получите исчерпывающий источник 
+            информации практически по всем открытым технологиям и инструментам, 
+            пользовавшимся популярностью в последние пять лет: Qt/KDE (версий 3 
+            и 4), GTK+, Perl, Python, PHP, Ruby on Rails, Java/Java EE, Blender, 
+            GIMP, LaTeX, Scribus, ядру Linux, разнообразным сетевым сервисам и 
+            утилитам Unix. </P>
+            <P>Подробнее ознакомиться с вариантами подписок вы можете здесь: <A 
+            href="http://www.linuxcenter.ru/shop/books-and-magazines/Linux-Format/?sid=nP5OTFA1">http://www.linuxcenter.ru/shop/books-and-magazines/Linux-Format/?sid=nP5OTFA1</A> 
+            </P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!--/htdig_noindex--><!-- footer --><!--htdig_noindex--><BR>
+<TABLE border=0 cellSpacing=0 cellPadding=1 width="100%" bgColor=#b0b190>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" 
+        VALIGN="MIDDLE"><TBODY>
+        <TR>
+          <TD bgColor=#e9ead6 width="35%" align=left><FONT 
+            size=-1>&nbsp;&nbsp;<A 
+            href="http://www.opennet.ru/cgi-bin/opennet/bookmark.cgi">Закладки&nbsp;на&nbsp;сайте</A><BR>&nbsp;&nbsp;<A 
+            href="http://www.opennet.ru/cgi-bin/opennet/bookmark.cgi?submit=add" 
+            target=blank_>Проследить&nbsp;за&nbsp;страницей</A> </FONT></TD>
+          <TD bgColor=#e9ead6 width="65%" align=right><FONT 
+            size=-1>Created&nbsp;1996-2011&nbsp;by&nbsp;<B><A 
+            title="email mc@tyumen.ru" 
+            href="http://www.opennet.ru/contact.shtml">Maxim&nbsp;Chirkov</A></B></FONT>&nbsp;&nbsp;<BR><FONT 
+            size=-1><A 
+            href="http://www.opennet.ru/add.shtml">Добавить</A>,&nbsp;<A 
+            href="http://www.opennet.ru/reklama.shtml">Реклама</A>,&nbsp;<A 
+            href="http://www.opennet.ru/banners2.shtml">Вебмастеру</A>,&nbsp;<A 
+            href="http://www.opennet.ru/guide.shtml">ГИД</A></FONT>&nbsp;&nbsp; 
+          </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV align=right>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><A href="http://www.runnet.ru/" target=_blank><IMG border=0 alt=RUNNet 
+      src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/runnet.gif" 
+      width=88 height=31></A> <A href="http://top.list.ru/jump?from=77689" 
+      target=_blank><IMG border=0 alt=TopList 
+      src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/counter.gif" 
+      width=38 height=31></A>
+      <SCRIPT type=text/javascript><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t45.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='31' height='31'><\/a>")
+//--></SCRIPT>
+       <A href="http://counter.rambler.ru/top100/" target=_blank><IMG border=0 
+      src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/top100.gif" 
+      width=1 height=1><IMG border=0 
+      src="Небольшое%20руководство%20по%20bash%20на%20русском%20языке_files/banner.gif" 
+      width=88 height=31></A> </TD></TR></TBODY></TABLE></DIV></FORM><!--/htdig_noindex--><!-- end of footer --></BODY></HTML>

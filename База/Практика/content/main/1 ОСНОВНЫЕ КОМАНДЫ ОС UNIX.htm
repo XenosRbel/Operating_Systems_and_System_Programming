@@ -1,0 +1,2529 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="1%20ОСНОВНЫЕ%20КОМАНДЫ%20ОС%20UNIX.files/filelist.xml">
+<link rel=Edit-Time-Data
+href="1%20ОСНОВНЫЕ%20КОМАНДЫ%20ОС%20UNIX.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>aroot</o:Author>
+  <o:LastAuthor>aroot</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2012-10-08T14:00:00Z</o:Created>
+  <o:LastSaved>2012-10-08T14:00:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>767</o:Words>
+  <o:Characters>4377</o:Characters>
+  <o:Lines>36</o:Lines>
+  <o:Paragraphs>10</o:Paragraphs>
+  <o:CharactersWithSpaces>5134</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData
+href="1%20ОСНОВНЫЕ%20КОМАНДЫ%20ОС%20UNIX.files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="1%20ОСНОВНЫЕ%20КОМАНДЫ%20ОС%20UNIX.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>RU</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1858301039;
+	mso-list-template-ids:1780388648;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+  <o:rules v:ext="edit">
+   <o:r id="V:Rule1" type="connector" idref="#AutoShape_x0020_5"/>
+   <o:r id="V:Rule2" type="connector" idref="#AutoShape_x0020_6"/>
+   <o:r id="V:Rule3" type="connector" idref="#AutoShape_x0020_8"/>
+   <o:r id="V:Rule4" type="connector" idref="#AutoShape_x0020_9"/>
+   <o:r id="V:Rule5" type="connector" idref="#AutoShape_x0020_17"/>
+   <o:r id="V:Rule6" type="connector" idref="#AutoShape_x0020_18"/>
+   <o:r id="V:Rule7" type="connector" idref="#AutoShape_x0020_20"/>
+   <o:r id="V:Rule8" type="connector" idref="#AutoShape_x0020_21"/>
+  </o:rules>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='text-transform:uppercase'>1. Основные команды ос </span></b><b><span
+lang=EN-US style='text-transform:uppercase;mso-ansi-language:EN-US'>unix</span><span
+style='text-transform:uppercase'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='text-transform:uppercase'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='text-transform:uppercase'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:35.4pt;background:white;mso-layout-grid-align:
+none;text-autospace:none'><span style='color:black'>Операционная система ОС </span><b><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>Linux</span></i></b><span
+lang=EN-US style='color:black'> </span><span style='color:black'>создана на
+основе ОС </span><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+EN-US'>UNIX</span></i></b><span style='color:black'> и во многом имеет схожую
+структуру и систему команд. Пользователь может работать в текстовом режиме с
+помощью командной строки, или с использованием графического интерфейса </span><b><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>X</span><span
+lang=EN-US style='color:black'> </span></i></b><b><i><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>Window</span></i></b><span
+lang=EN-US style='color:black'> </span><span style='color:black'>и одного из
+менеджеров рабочего стола (например, </span><b><i><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>KDE</span></i></b><span lang=EN-US
+style='color:black'> </span><span style='color:black'>или </span><b><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>GNOME</span></i></b><span
+style='color:black'>). Причем, одновременно в системе могут работать 7
+пользователей (6- в текстовом режиме консоли и 1 – в графическом режиме),
+переключение между пользователями осуществляется по нажатию клавиш:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><!--[if gte vml 1]><v:group id="Группа_x0020_14" o:spid="_x0000_s1039"
+ style='position:absolute;left:0;text-align:left;margin-left:145.1pt;
+ margin-top:1.75pt;width:106.9pt;height:15.75pt;z-index:251662336'
+ coordorigin="1542,1795" coordsize="2138,315" o:gfxdata="UEsDBBQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRQU7DMBBF
+90jcwfIWJU67QAgl6YK0S0CoHGBkTxKLZGx5TGhvj5O2G0SRWNoz/78nu9wcxkFMGNg6quQqL6RA
+0s5Y6ir5vt9lD1JwBDIwOMJKHpHlpr69KfdHjyxSmriSfYz+USnWPY7AufNIadK6MEJMx9ApD/oD
+OlTrorhX2lFEilmcO2RdNtjC5xDF9pCuTyYBB5bi6bQ4syoJ3g9WQ0ymaiLzg5KdCXlKLjvcW893
+SUOqXwnz5DrgnHtJTxOsQfEKIT7DmDSUCaxw7Rqn8787ZsmRM9e2VmPeBN4uqYvTtW7jvijg9N/y
+JsXecLq0q+WD6m8AAAD//wMAUEsDBBQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAX3JlbHMvLnJl
+bHOkkMFqwzAMhu+DvYPRfXGawxijTi+j0GvpHsDYimMaW0Yy2fr2M4PBMnrbUb/Q94l/f/hMi1qR
+JVI2sOt6UJgd+ZiDgffL8ekFlFSbvV0oo4EbChzGx4f9GRdb25HMsYhqlCwG5lrLq9biZkxWOiqY
+22YiTra2kYMu1l1tQD30/bPm3wwYN0x18gb45AdQl1tp5j/sFB2T0FQ7R0nTNEV3j6o9feQzro1i
+OWA14Fm+Q8a1a8+Bvu/d/dMb2JY5uiPbhG/ktn4cqGU/er3pcvwCAAD//wMAUEsDBBQABgAIAAAA
+IQB1SAiSnQQAACEbAAAOAAAAZHJzL2Uyb0RvYy54bWzsWWtu4zYQ/l+gdyD037EkPyXEWQR+BAW2
+bYBtD0BLlCVUIlWSiZwWBQr0CL1Ib9Ar7N6ow6Ekv7IvNzHSrh3AoUhpPDP8Zobf6PLVusjJPZMq
+E3zieBeuQxiPRJzx1cT58YdFZ+wQpSmPaS44mzgPTDmvrr7+6rIqQ+aLVOQxkwSEcBVW5cRJtS7D
+bldFKSuouhAl47CYCFlQDZdy1Y0lrUB6kXd91x12KyHjUoqIKQWzM7voXKH8JGGR/j5JFNMknzig
+m8Zvid9L8929uqThStIyzaJaDXqEFgXNOPxoK2pGNSV3MjsQVWSRFEok+iISRVckSRYxtAGs8dw9
+a26kuCvRllVYrcrWTeDaPT8dLTb67v5WkiyGves7hNMC9ujtn+9+f/fH27/h7y8C0+CjqlyFcOuN
+LN+Ut9IaCsPXIvpJwXJ3f91cr+zNZFl9K2IQS++0QB+tE1kYEWA9WeNWPLRbwdaaRDDp9QajYQ92
+LII12GjXH9i9ilLYUPOYN+j7DoFVbxS0a/P6cd/rAfDMsz0PF7s0tD+LqtaqWbvwojWx8cag8QZu
+AvGGz+0GPwiG1p7xsGdtbZ0xqo3xhv6eFwJvHOBTvjc48IK399x7nQCxpzbwUv8OXm9SWjJErTKY
+aRwKxll4XQMO8B7ijaxT8b4pv5WINBUqwNhHYbOx3Ie9xjg+8BfGd2s1DUup9A0TBTGDiaO0pNkq
+1VPBOWQKIT3EJ71/rbRB9eYBA1cuFlme4w/lnFQAPH/kuviEEnkWm1Vzn5Kr5TSX5J6anIMfox5I
+27kNYpvHKC1lNJ7XY02z3I7h/pwbeWAV6FOPbFL5NXCD+Xg+7nf6/nDe6buzWed6Me13hgtvNJj1
+ZtPpzPvNqOb1wzSLY8aNdk2C8/qftsN1qrWpqU1xrR+6u9LRRFC2+Y9KQ7jZ/TQBpsKliB9wm3Ee
+QGennx99o0fQh6gxWgFKPxt9/tjbi7sGfXXSqmP1jL4Xjb5NOfhQMYD0a3NXXQwCm7eeryZCNv9f
+FwOoWfvFwMdkfWw4tmXwXAzOxaClA48fRQBph+jzbEifi8EXfBT5pGLgQ93fLgY+Hsn3CZBhgk9F
+kB5hOs1Z44Dn0PCpCdIJuAG48DAgew6JmYqAq5OplvlWeDYUVFn+SbiYppSv2LUq4RQP53KQ1kxJ
+KSpzvgZOgxGO504471kZzeH0o2TjA1swALb2KNPcsIeabiS5qEBTqa9zzSSnmt3aTPV5rCNwB8ez
+jiKDnyZ5VkyccUtNaPgfoyA7RGqHby3wc8i3juAqer1cAz/b0BYiBaALigf0u2CQCvmLQyroHQGT
+/PmOSuaQ/BtukGZcC80mvICB3J5dNrOURyBi4iwdYocAcxR/V0rDSg1iDevjwjDmJENKutEGaJa5
+OB2H8gHnB4c2aBq9nCj1ewHwvJ2WUJMo+2No6Nh+EDa03k/LzlH6VI2Ck0Wp7V82FcL2GL70YG27
+uZt2G7RQX1Cw9nwfdLTBis1V7HRh87dvyO85WE9K5E4brPWZuWkIvtxg3aYEOIb3MNjgrN8ZmRc9
+29dYlTdvtq7+AQAA//8DAFBLAwQUAAYACAAAACEAZATDO94AAAAIAQAADwAAAGRycy9kb3ducmV2
+LnhtbEyPQUvDQBSE74L/YXmCN7ub1IiN2ZRS1FMR2grS22vymoRmd0N2m6T/3teTHocZZr7JlpNp
+xUC9b5zVEM0UCLKFKxtbafjefzy9gvABbYmts6ThSh6W+f1dhmnpRrulYRcqwSXWp6ihDqFLpfRF
+TQb9zHVk2Tu53mBg2Vey7HHkctPKWKkXabCxvFBjR+uaivPuYjR8jjiu5tH7sDmf1tfDPvn62USk
+9ePDtHoDEWgKf2G44TM65Mx0dBdbetFqiBcq5qiGeQKC/UQ987fjTSuQeSb/H8h/AQAA//8DAFBL
+AQItABQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAAAAAAAAAAAAAAAAAAABbQ29udGVudF9UeXBl
+c10ueG1sUEsBAi0AFAAGAAgAAAAhADj9If/WAAAAlAEAAAsAAAAAAAAAAAAAAAAALwEAAF9yZWxz
+Ly5yZWxzUEsBAi0AFAAGAAgAAAAhAHVICJKdBAAAIRsAAA4AAAAAAAAAAAAAAAAALgIAAGRycy9l
+Mm9Eb2MueG1sUEsBAi0AFAAGAAgAAAAhAGQEwzveAAAACAEAAA8AAAAAAAAAAAAAAAAA9wYAAGRy
+cy9kb3ducmV2LnhtbFBLBQYAAAAABAAEAPMAAAACCAAAAAA=
+">
+ <v:group id="Group_x0020_16" o:spid="_x0000_s1040" style='position:absolute;
+  left:2996;top:1863;width:178;height:162' coordorigin="9189,2155" coordsize="178,162"
+  o:gfxdata="UEsDBBQABgAIAAAAIQCi+E9TBAEAAOwBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRy07DMBBF
+90j8g+UtShxYIISadEGAHSAoHzCyJ4lFYlseN7R/z7iPDaJIXdpzz5wre7HcTKOYMZL1rpbXZSUF
+Ou2NdX0tP1dPxZ0UlMAZGL3DWm6R5LK5vFistgFJMO2olkNK4V4p0gNOQKUP6HjS+ThB4mPsVQD9
+BT2qm6q6Vdq7hC4VKe+QzaLFDtZjEo8bvt43iTiSFA/7YHbVEkIYrYbETdXszC9LcTCUTO4yNNhA
+V1xDqj8NeXJacOBe+WmiNSjeIKYXmLiGMpFUH/060AABOVj+vyp3najwXWc1lm2k5wx/ZPhY75TG
++G8XcT5X0DL2jvNxu9r9VfMDAAD//wMAUEsDBBQABgAIAAAAIQBsBtX+2AAAAJkBAAALAAAAX3Jl
+bHMvLnJlbHOkkMFKAzEQhu+C7xDm7mbbg4g025vQa63gNSSz2eAmE2biat/eWBBc6c3jzM9838/s
+9p9pVguyRMoGNl0PCrMjH3Mw8HJ6unsAJdVmb2fKaOCMAvvh9mZ3xNnWdiRTLKIaJYuBqdbyqLW4
+CZOVjgrmlozEydY2ctDFujcbUG/7/l7zbwYMK6Y6eAN88FtQp3Np5j/sFB2T0Fg7R0nTOEZ3jao9
+feQjLo1iOWA14FkuS8ala+VAX/du/ukNTO/lebIFX5tkZb9E8h01/08HvXro8AUAAP//AwBQSwME
+FAAGAAgAAAAhADMvBZ5BAAAAOQAAABUAAABkcnMvZ3JvdXBzaGFwZXhtbC54bWyysa/IzVEoSy0q
+zszPs1Uy1DNQUkjNS85PycxLt1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBL
+AwQUAAYACAAAACEA/UphgsMAAADbAAAADwAAAGRycy9kb3ducmV2LnhtbERPTWvCQBC9F/wPywi9
+1U1aUkp0DUGs9BCEakG8DdkxCWZnQ3ZN4r/vCoXe5vE+Z5VNphUD9a6xrCBeRCCIS6sbrhT8HD9f
+PkA4j6yxtUwK7uQgW8+eVphqO/I3DQdfiRDCLkUFtfddKqUrazLoFrYjDtzF9gZ9gH0ldY9jCDet
+fI2id2mw4dBQY0ebmsrr4WYU7EYc87d4OxTXy+Z+Pib7UxGTUs/zKV+C8DT5f/Gf+0uH+Qk8fgkH
+yPUvAAAA//8DAFBLAQItABQABgAIAAAAIQCi+E9TBAEAAOwBAAATAAAAAAAAAAAAAAAAAAAAAABb
+Q29udGVudF9UeXBlc10ueG1sUEsBAi0AFAAGAAgAAAAhAGwG1f7YAAAAmQEAAAsAAAAAAAAAAAAA
+AAAANQEAAF9yZWxzLy5yZWxzUEsBAi0AFAAGAAgAAAAhADMvBZ5BAAAAOQAAABUAAAAAAAAAAAAA
+AAAANgIAAGRycy9ncm91cHNoYXBleG1sLnhtbFBLAQItABQABgAIAAAAIQD9SmGCwwAAANsAAAAP
+AAAAAAAAAAAAAAAAAKoCAABkcnMvZG93bnJldi54bWxQSwUGAAAAAAQABAD6AAAAmgMAAAAA
+">
+  <v:shapetype id="_x0000_t32" coordsize="21600,21600" o:spt="32" o:oned="t"
+   path="m,l21600,21600e" filled="f">
+   <v:path arrowok="t" fillok="f" o:connecttype="none"/>
+   <o:lock v:ext="edit" shapetype="t"/>
+  </v:shapetype><v:shape id="AutoShape_x0020_17" o:spid="_x0000_s1041" type="#_x0000_t32"
+   style='position:absolute;left:9189;top:2238;width:178;height:0;visibility:visible;
+   mso-wrap-style:square' o:connectortype="straight" o:gfxdata="UEsDBBQABgAIAAAAIQD+JeulAAEAAOoBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRzU7EIBDH
+7ya+A+FqWqoHY0zpHqwe1Zj1AQhMW2I7EAbr7ts73e5ejGviEeb/8RuoN7tpFDMk8gG1vC4rKQBt
+cB57Ld+3T8WdFJQNOjMGBC33QHLTXF7U230EEuxG0nLIOd4rRXaAyVAZIiBPupAmk/mYehWN/TA9
+qJuqulU2YAbMRV4yZFO30JnPMYvHHV+vJAlGkuJhFS5dWpoYR29NZlI1o/vRUhwbSnYeNDT4SFeM
+IdWvDcvkfMHR98JPk7wD8WpSfjYTYyiXaNkAweaQWFf+nbSgTlSErvMWyjYRL7V6T3DnSlz4wgTz
+f/Nbtr3BfEpXh59qvgEAAP//AwBQSwMEFAAGAAgAAAAhAJYFM1jUAAAAlwEAAAsAAABfcmVscy8u
+cmVsc6SQPWsDMQyG90L/g9He8yVDKSW+bIWsIYWuxtZ9kLNkJHNN/n1MoaVXsnWUXvQ8L9rtL2k2
+C4pOTA42TQsGKXCcaHDwfnp7egGjxVP0MxM6uKLCvnt82B1x9qUe6ThlNZVC6mAsJb9aq2HE5LXh
+jFSTniX5UkcZbPbh7Ae027Z9tvKbAd2KaQ7RgRziFszpmqv5DztNQVi5L03gZLnvp3CPaiN/0hGX
+SvEyYHEQRb+WgktTy4G979380xuYCENh+aiOlfwnqfbvBnb1zu4GAAD//wMAUEsDBBQABgAIAAAA
+IQAzLwWeQQAAADkAAAAUAAAAZHJzL2Nvbm5lY3RvcnhtbC54bWyysa/IzVEoSy0qzszPs1Uy1DNQ
+UkjNS85PycxLt1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBLAwQUAAYACAAA
+ACEAtsOhlMEAAADbAAAADwAAAGRycy9kb3ducmV2LnhtbERPS2vCQBC+F/wPyxR6KXVjD2lMXUWF
+gnjTiOQ4ZMckNDsbsptH/70rCL3Nx/ec1WYyjRioc7VlBYt5BIK4sLrmUsEl+/lIQDiPrLGxTAr+
+yMFmPXtZYartyCcazr4UIYRdigoq79tUSldUZNDNbUscuJvtDPoAu1LqDscQbhr5GUWxNFhzaKiw
+pX1Fxe+5Nwr65vie9Ve/GMrd8HVLlkk+5U6pt9dp+w3C0+T/xU/3QYf5MTx+CQfI9R0AAP//AwBQ
+SwECLQAUAAYACAAAACEA/iXrpQABAADqAQAAEwAAAAAAAAAAAAAAAAAAAAAAW0NvbnRlbnRfVHlw
+ZXNdLnhtbFBLAQItABQABgAIAAAAIQCWBTNY1AAAAJcBAAALAAAAAAAAAAAAAAAAADEBAABfcmVs
+cy8ucmVsc1BLAQItABQABgAIAAAAIQAzLwWeQQAAADkAAAAUAAAAAAAAAAAAAAAAAC4CAABkcnMv
+Y29ubmVjdG9yeG1sLnhtbFBLAQItABQABgAIAAAAIQC2w6GUwQAAANsAAAAPAAAAAAAAAAAAAAAA
+AKECAABkcnMvZG93bnJldi54bWxQSwUGAAAAAAQABAD5AAAAjwMAAAAA
+" strokeweight="1pt"/>
+  <v:shape id="AutoShape_x0020_18" o:spid="_x0000_s1042" type="#_x0000_t32"
+   style='position:absolute;left:9281;top:2155;width:0;height:162;visibility:visible;
+   mso-wrap-style:square' o:connectortype="straight" o:gfxdata="UEsDBBQABgAIAAAAIQD+JeulAAEAAOoBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRzU7EIBDH
+7ya+A+FqWqoHY0zpHqwe1Zj1AQhMW2I7EAbr7ts73e5ejGviEeb/8RuoN7tpFDMk8gG1vC4rKQBt
+cB57Ld+3T8WdFJQNOjMGBC33QHLTXF7U230EEuxG0nLIOd4rRXaAyVAZIiBPupAmk/mYehWN/TA9
+qJuqulU2YAbMRV4yZFO30JnPMYvHHV+vJAlGkuJhFS5dWpoYR29NZlI1o/vRUhwbSnYeNDT4SFeM
+IdWvDcvkfMHR98JPk7wD8WpSfjYTYyiXaNkAweaQWFf+nbSgTlSErvMWyjYRL7V6T3DnSlz4wgTz
+f/Nbtr3BfEpXh59qvgEAAP//AwBQSwMEFAAGAAgAAAAhAJYFM1jUAAAAlwEAAAsAAABfcmVscy8u
+cmVsc6SQPWsDMQyG90L/g9He8yVDKSW+bIWsIYWuxtZ9kLNkJHNN/n1MoaVXsnWUXvQ8L9rtL2k2
+C4pOTA42TQsGKXCcaHDwfnp7egGjxVP0MxM6uKLCvnt82B1x9qUe6ThlNZVC6mAsJb9aq2HE5LXh
+jFSTniX5UkcZbPbh7Ae027Z9tvKbAd2KaQ7RgRziFszpmqv5DztNQVi5L03gZLnvp3CPaiN/0hGX
+SvEyYHEQRb+WgktTy4G979380xuYCENh+aiOlfwnqfbvBnb1zu4GAAD//wMAUEsDBBQABgAIAAAA
+IQAzLwWeQQAAADkAAAAUAAAAZHJzL2Nvbm5lY3RvcnhtbC54bWyysa/IzVEoSy0qzszPs1Uy1DNQ
+UkjNS85PycxLt1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBLAwQUAAYACAAA
+ACEA2Y8ED8EAAADbAAAADwAAAGRycy9kb3ducmV2LnhtbERPS2vCQBC+C/6HZQq9SN3Yg8bUVWyh
+IN6aiOQ4ZMckNDsbsptH/70rCL3Nx/ec3WEyjRioc7VlBatlBIK4sLrmUsEl+36LQTiPrLGxTAr+
+yMFhP5/tMNF25B8aUl+KEMIuQQWV920ipSsqMuiWtiUO3M12Bn2AXSl1h2MIN418j6K1NFhzaKiw
+pa+Kit+0Nwr65rzI+qtfDeXnsLnF2zifcqfU68t0/ADhafL/4qf7pMP8DTx+CQfI/R0AAP//AwBQ
+SwECLQAUAAYACAAAACEA/iXrpQABAADqAQAAEwAAAAAAAAAAAAAAAAAAAAAAW0NvbnRlbnRfVHlw
+ZXNdLnhtbFBLAQItABQABgAIAAAAIQCWBTNY1AAAAJcBAAALAAAAAAAAAAAAAAAAADEBAABfcmVs
+cy8ucmVsc1BLAQItABQABgAIAAAAIQAzLwWeQQAAADkAAAAUAAAAAAAAAAAAAAAAAC4CAABkcnMv
+Y29ubmVjdG9yeG1sLnhtbFBLAQItABQABgAIAAAAIQDZjwQPwQAAANsAAAAPAAAAAAAAAAAAAAAA
+AKECAABkcnMvZG93bnJldi54bWxQSwUGAAAAAAQABAD5AAAAjwMAAAAA
+" strokeweight="1pt"/>
+ </v:group><v:group id="Group_x0020_19" o:spid="_x0000_s1043" style='position:absolute;
+  left:2156;top:1863;width:178;height:162' coordorigin="9189,2155" coordsize="178,162"
+  o:gfxdata="UEsDBBQABgAIAAAAIQCi+E9TBAEAAOwBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRy07DMBBF
+90j8g+UtShxYIISadEGAHSAoHzCyJ4lFYlseN7R/z7iPDaJIXdpzz5wre7HcTKOYMZL1rpbXZSUF
+Ou2NdX0tP1dPxZ0UlMAZGL3DWm6R5LK5vFistgFJMO2olkNK4V4p0gNOQKUP6HjS+ThB4mPsVQD9
+BT2qm6q6Vdq7hC4VKe+QzaLFDtZjEo8bvt43iTiSFA/7YHbVEkIYrYbETdXszC9LcTCUTO4yNNhA
+V1xDqj8NeXJacOBe+WmiNSjeIKYXmLiGMpFUH/060AABOVj+vyp3najwXWc1lm2k5wx/ZPhY75TG
++G8XcT5X0DL2jvNxu9r9VfMDAAD//wMAUEsDBBQABgAIAAAAIQBsBtX+2AAAAJkBAAALAAAAX3Jl
+bHMvLnJlbHOkkMFKAzEQhu+C7xDm7mbbg4g025vQa63gNSSz2eAmE2biat/eWBBc6c3jzM9838/s
+9p9pVguyRMoGNl0PCrMjH3Mw8HJ6unsAJdVmb2fKaOCMAvvh9mZ3xNnWdiRTLKIaJYuBqdbyqLW4
+CZOVjgrmlozEydY2ctDFujcbUG/7/l7zbwYMK6Y6eAN88FtQp3Np5j/sFB2T0Fg7R0nTOEZ3jao9
+feQjLo1iOWA14FkuS8ala+VAX/du/ukNTO/lebIFX5tkZb9E8h01/08HvXro8AUAAP//AwBQSwME
+FAAGAAgAAAAhADMvBZ5BAAAAOQAAABUAAABkcnMvZ3JvdXBzaGFwZXhtbC54bWyysa/IzVEoSy0q
+zszPs1Uy1DNQUkjNS85PycxLt1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBL
+AwQUAAYACAAAACEAE0vOHMUAAADbAAAADwAAAGRycy9kb3ducmV2LnhtbESPT2vCQBDF70K/wzKF
+3nQTS0tJ3YhIlR6kUC2ItyE7+YPZ2ZBdk/jtO4dCbzO8N+/9ZrWeXKsG6kPj2UC6SEARF942XBn4
+Oe3mb6BCRLbYeiYDdwqwzh9mK8ysH/mbhmOslIRwyNBAHWOXaR2KmhyGhe+IRSt97zDK2lfa9jhK
+uGv1MkletcOGpaHGjrY1FdfjzRnYjzhuntOP4XAtt/fL6eXrfEjJmKfHafMOKtIU/81/159W8AVW
+fpEBdP4LAAD//wMAUEsBAi0AFAAGAAgAAAAhAKL4T1MEAQAA7AEAABMAAAAAAAAAAAAAAAAAAAAA
+AFtDb250ZW50X1R5cGVzXS54bWxQSwECLQAUAAYACAAAACEAbAbV/tgAAACZAQAACwAAAAAAAAAA
+AAAAAAA1AQAAX3JlbHMvLnJlbHNQSwECLQAUAAYACAAAACEAMy8FnkEAAAA5AAAAFQAAAAAAAAAA
+AAAAAAA2AgAAZHJzL2dyb3Vwc2hhcGV4bWwueG1sUEsBAi0AFAAGAAgAAAAhABNLzhzFAAAA2wAA
+AA8AAAAAAAAAAAAAAAAAqgIAAGRycy9kb3ducmV2LnhtbFBLBQYAAAAABAAEAPoAAACcAwAAAAA=
+">
+  <v:shape id="AutoShape_x0020_20" o:spid="_x0000_s1044" type="#_x0000_t32"
+   style='position:absolute;left:9189;top:2238;width:178;height:0;visibility:visible;
+   mso-wrap-style:square' o:connectortype="straight" o:gfxdata="UEsDBBQABgAIAAAAIQD+JeulAAEAAOoBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRzU7EIBDH
+7ya+A+FqWqoHY0zpHqwe1Zj1AQhMW2I7EAbr7ts73e5ejGviEeb/8RuoN7tpFDMk8gG1vC4rKQBt
+cB57Ld+3T8WdFJQNOjMGBC33QHLTXF7U230EEuxG0nLIOd4rRXaAyVAZIiBPupAmk/mYehWN/TA9
+qJuqulU2YAbMRV4yZFO30JnPMYvHHV+vJAlGkuJhFS5dWpoYR29NZlI1o/vRUhwbSnYeNDT4SFeM
+IdWvDcvkfMHR98JPk7wD8WpSfjYTYyiXaNkAweaQWFf+nbSgTlSErvMWyjYRL7V6T3DnSlz4wgTz
+f/Nbtr3BfEpXh59qvgEAAP//AwBQSwMEFAAGAAgAAAAhAJYFM1jUAAAAlwEAAAsAAABfcmVscy8u
+cmVsc6SQPWsDMQyG90L/g9He8yVDKSW+bIWsIYWuxtZ9kLNkJHNN/n1MoaVXsnWUXvQ8L9rtL2k2
+C4pOTA42TQsGKXCcaHDwfnp7egGjxVP0MxM6uKLCvnt82B1x9qUe6ThlNZVC6mAsJb9aq2HE5LXh
+jFSTniX5UkcZbPbh7Ae027Z9tvKbAd2KaQ7RgRziFszpmqv5DztNQVi5L03gZLnvp3CPaiN/0hGX
+SvEyYHEQRb+WgktTy4G979380xuYCENh+aiOlfwnqfbvBnb1zu4GAAD//wMAUEsDBBQABgAIAAAA
+IQAzLwWeQQAAADkAAAAUAAAAZHJzL2Nvbm5lY3RvcnhtbC54bWyysa/IzVEoSy0qzszPs1Uy1DNQ
+UkjNS85PycxLt1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBLAwQUAAYACAAA
+ACEAx1w15sEAAADbAAAADwAAAGRycy9kb3ducmV2LnhtbERPS2vCQBC+C/6HZYReRDfpoU2iq2ih
+UHrTiHgcsmMSzM6G7ObRf98tCL3Nx/ec7X4yjRioc7VlBfE6AkFcWF1zqeCSf64SEM4ja2wsk4If
+crDfzWdbzLQd+UTD2ZcihLDLUEHlfZtJ6YqKDLq1bYkDd7edQR9gV0rd4RjCTSNfo+hNGqw5NFTY
+0kdFxePcGwV9873M+6uPh/I4vN+TNLlNN6fUy2I6bEB4mvy/+On+0mF+Cn+/hAPk7hcAAP//AwBQ
+SwECLQAUAAYACAAAACEA/iXrpQABAADqAQAAEwAAAAAAAAAAAAAAAAAAAAAAW0NvbnRlbnRfVHlw
+ZXNdLnhtbFBLAQItABQABgAIAAAAIQCWBTNY1AAAAJcBAAALAAAAAAAAAAAAAAAAADEBAABfcmVs
+cy8ucmVsc1BLAQItABQABgAIAAAAIQAzLwWeQQAAADkAAAAUAAAAAAAAAAAAAAAAAC4CAABkcnMv
+Y29ubmVjdG9yeG1sLnhtbFBLAQItABQABgAIAAAAIQDHXDXmwQAAANsAAAAPAAAAAAAAAAAAAAAA
+AKECAABkcnMvZG93bnJldi54bWxQSwUGAAAAAAQABAD5AAAAjwMAAAAA
+" strokeweight="1pt"/>
+  <v:shape id="AutoShape_x0020_21" o:spid="_x0000_s1045" type="#_x0000_t32"
+   style='position:absolute;left:9281;top:2155;width:0;height:162;visibility:visible;
+   mso-wrap-style:square' o:connectortype="straight" o:gfxdata="UEsDBBQABgAIAAAAIQD+JeulAAEAAOoBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRzU7EIBDH
+7ya+A+FqWqoHY0zpHqwe1Zj1AQhMW2I7EAbr7ts73e5ejGviEeb/8RuoN7tpFDMk8gG1vC4rKQBt
+cB57Ld+3T8WdFJQNOjMGBC33QHLTXF7U230EEuxG0nLIOd4rRXaAyVAZIiBPupAmk/mYehWN/TA9
+qJuqulU2YAbMRV4yZFO30JnPMYvHHV+vJAlGkuJhFS5dWpoYR29NZlI1o/vRUhwbSnYeNDT4SFeM
+IdWvDcvkfMHR98JPk7wD8WpSfjYTYyiXaNkAweaQWFf+nbSgTlSErvMWyjYRL7V6T3DnSlz4wgTz
+f/Nbtr3BfEpXh59qvgEAAP//AwBQSwMEFAAGAAgAAAAhAJYFM1jUAAAAlwEAAAsAAABfcmVscy8u
+cmVsc6SQPWsDMQyG90L/g9He8yVDKSW+bIWsIYWuxtZ9kLNkJHNN/n1MoaVXsnWUXvQ8L9rtL2k2
+C4pOTA42TQsGKXCcaHDwfnp7egGjxVP0MxM6uKLCvnt82B1x9qUe6ThlNZVC6mAsJb9aq2HE5LXh
+jFSTniX5UkcZbPbh7Ae027Z9tvKbAd2KaQ7RgRziFszpmqv5DztNQVi5L03gZLnvp3CPaiN/0hGX
+SvEyYHEQRb+WgktTy4G979380xuYCENh+aiOlfwnqfbvBnb1zu4GAAD//wMAUEsDBBQABgAIAAAA
+IQAzLwWeQQAAADkAAAAUAAAAZHJzL2Nvbm5lY3RvcnhtbC54bWyysa/IzVEoSy0qzszPs1Uy1DNQ
+UkjNS85PycxLt1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBLAwQUAAYACAAA
+ACEAmApWxsAAAADbAAAADwAAAGRycy9kb3ducmV2LnhtbERPy4rCMBTdC/5DuIIb0VQXM7U2ig4M
+DLMbK+Ly0tw+sLkpTVrr308WgsvDeaeH0TRioM7VlhWsVxEI4tzqmksFl+x7GYNwHlljY5kUPMnB
+YT+dpJho++A/Gs6+FCGEXYIKKu/bREqXV2TQrWxLHLjCdgZ9gF0pdYePEG4auYmiD2mw5tBQYUtf
+FeX3c28U9M3vIuuvfj2Up+GziLfxbbw5peaz8bgD4Wn0b/HL/aMVbML68CX8ALn/BwAA//8DAFBL
+AQItABQABgAIAAAAIQD+JeulAAEAAOoBAAATAAAAAAAAAAAAAAAAAAAAAABbQ29udGVudF9UeXBl
+c10ueG1sUEsBAi0AFAAGAAgAAAAhAJYFM1jUAAAAlwEAAAsAAAAAAAAAAAAAAAAAMQEAAF9yZWxz
+Ly5yZWxzUEsBAi0AFAAGAAgAAAAhADMvBZ5BAAAAOQAAABQAAAAAAAAAAAAAAAAALgIAAGRycy9j
+b25uZWN0b3J4bWwueG1sUEsBAi0AFAAGAAgAAAAhAJgKVsbAAAAA2wAAAA8AAAAAAAAAAAAAAAAA
+oQIAAGRycy9kb3ducmV2LnhtbFBLBQYAAAAABAAEAPkAAACOAwAAAAA=
+" strokeweight="1pt"/>
+ </v:group><v:group id="Group_x0020_22" o:spid="_x0000_s1046" style='position:absolute;
+  left:1542;top:1795;width:2138;height:315' coordorigin="1542,1795"
+  coordsize="2138,315" o:gfxdata="UEsDBBQABgAIAAAAIQCi+E9TBAEAAOwBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRy07DMBBF
+90j8g+UtShxYIISadEGAHSAoHzCyJ4lFYlseN7R/z7iPDaJIXdpzz5wre7HcTKOYMZL1rpbXZSUF
+Ou2NdX0tP1dPxZ0UlMAZGL3DWm6R5LK5vFistgFJMO2olkNK4V4p0gNOQKUP6HjS+ThB4mPsVQD9
+BT2qm6q6Vdq7hC4VKe+QzaLFDtZjEo8bvt43iTiSFA/7YHbVEkIYrYbETdXszC9LcTCUTO4yNNhA
+V1xDqj8NeXJacOBe+WmiNSjeIKYXmLiGMpFUH/060AABOVj+vyp3najwXWc1lm2k5wx/ZPhY75TG
++G8XcT5X0DL2jvNxu9r9VfMDAAD//wMAUEsDBBQABgAIAAAAIQBsBtX+2AAAAJkBAAALAAAAX3Jl
+bHMvLnJlbHOkkMFKAzEQhu+C7xDm7mbbg4g025vQa63gNSSz2eAmE2biat/eWBBc6c3jzM9838/s
+9p9pVguyRMoGNl0PCrMjH3Mw8HJ6unsAJdVmb2fKaOCMAvvh9mZ3xNnWdiRTLKIaJYuBqdbyqLW4
+CZOVjgrmlozEydY2ctDFujcbUG/7/l7zbwYMK6Y6eAN88FtQp3Np5j/sFB2T0Fg7R0nTOEZ3jao9
+feQjLo1iOWA14FkuS8ala+VAX/du/ukNTO/lebIFX5tkZb9E8h01/08HvXro8AUAAP//AwBQSwME
+FAAGAAgAAAAhADMvBZ5BAAAAOQAAABUAAABkcnMvZ3JvdXBzaGFwZXhtbC54bWyysa/IzVEoSy0q
+zszPs1Uy1DNQUkjNS85PycxLt1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBL
+AwQUAAYACAAAACEATB2tPMMAAADbAAAADwAAAGRycy9kb3ducmV2LnhtbESPQYvCMBSE7wv+h/AE
+b2taxWWpRhFR8SDC6oJ4ezTPtti8lCa29d8bQfA4zMw3zGzRmVI0VLvCsoJ4GIEgTq0uOFPwf9p8
+/4JwHlljaZkUPMjBYt77mmGibct/1Bx9JgKEXYIKcu+rREqX5mTQDW1FHLyrrQ36IOtM6hrbADel
+HEXRjzRYcFjIsaJVTunteDcKti22y3G8bva36+pxOU0O531MSg363XIKwlPnP+F3e6cVjGJ4fQk/
+QM6fAAAA//8DAFBLAQItABQABgAIAAAAIQCi+E9TBAEAAOwBAAATAAAAAAAAAAAAAAAAAAAAAABb
+Q29udGVudF9UeXBlc10ueG1sUEsBAi0AFAAGAAgAAAAhAGwG1f7YAAAAmQEAAAsAAAAAAAAAAAAA
+AAAANQEAAF9yZWxzLy5yZWxzUEsBAi0AFAAGAAgAAAAhADMvBZ5BAAAAOQAAABUAAAAAAAAAAAAA
+AAAANgIAAGRycy9ncm91cHNoYXBleG1sLnhtbFBLAQItABQABgAIAAAAIQBMHa08wwAAANsAAAAP
+AAAAAAAAAAAAAAAAAKoCAABkcnMvZG93bnJldi54bWxQSwUGAAAAAAQABAD6AAAAmgMAAAAA
+">
+  <v:shapetype id="_x0000_t176" coordsize="21600,21600" o:spt="176" adj="2700"
+   path="m@0,qx0@0l0@2qy@0,21600l@1,21600qx21600@2l21600@0qy@1,xe">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="val #0"/>
+    <v:f eqn="sum width 0 #0"/>
+    <v:f eqn="sum height 0 #0"/>
+    <v:f eqn="prod @0 2929 10000"/>
+    <v:f eqn="sum width 0 @3"/>
+    <v:f eqn="sum height 0 @3"/>
+    <v:f eqn="val width"/>
+    <v:f eqn="val height"/>
+    <v:f eqn="prod width 1 2"/>
+    <v:f eqn="prod height 1 2"/>
+   </v:formulas>
+   <v:path gradientshapeok="t" limo="10800,10800" o:connecttype="custom"
+    o:connectlocs="@8,0;0,@9;@8,@7;@6,@9" textboxrect="@3,@3,@4,@5"/>
+  </v:shapetype><v:shape id="AutoShape_x0020_23" o:spid="_x0000_s1047" type="#_x0000_t176"
+   alt=" Ctrl" style='position:absolute;left:1542;top:1795;width:563;height:315;
+   visibility:visible;mso-wrap-style:square;v-text-anchor:bottom' o:gfxdata="UEsDBBQABgAIAAAAIQDw94q7/QAAAOIBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRzUrEMBDH
+74LvEOYqbaoHEWm6B6tHFV0fYEimbdg2CZlYd9/edD8u4goeZ+b/8SOpV9tpFDNFtt4puC4rEOS0
+N9b1Cj7WT8UdCE7oDI7ekYIdMayay4t6vQvEIrsdKxhSCvdSsh5oQi59IJcvnY8TpjzGXgbUG+xJ
+3lTVrdTeJXKpSEsGNHVLHX6OSTxu8/pAEmlkEA8H4dKlAEMYrcaUSeXszI+W4thQZudew4MNfJUx
+QP7asFzOFxx9L/lpojUkXjGmZ5wyhjSRJQ8YKGvKv1MWzIkL33VWU9lGfl98J6hz4cZ/uUjzf7Pb
+bHuj+ZQu9z/UfAMAAP//AwBQSwMEFAAGAAgAAAAhADHdX2HSAAAAjwEAAAsAAABfcmVscy8ucmVs
+c6SQwWrDMAyG74O9g9G9cdpDGaNOb4VeSwe7CltJTGPLWCZt376mMFhGbzvqF/o+8e/2tzCpmbJ4
+jgbWTQuKomXn42Dg63xYfYCSgtHhxJEM3Elg372/7U40YalHMvokqlKiGBhLSZ9aix0poDScKNZN
+zzlgqWMedEJ7wYH0pm23Ov9mQLdgqqMzkI9uA+p8T9X8hx28zSzcl8Zy0Nz33r6iasfXeKK5UjAP
+VAy4LM8w09zU50C/9q7/6ZURE31X/kL8TKv1x6wXNXYPAAAA//8DAFBLAwQUAAYACAAAACEAMy8F
+nkEAAAA5AAAAEAAAAGRycy9zaGFwZXhtbC54bWyysa/IzVEoSy0qzszPs1Uy1DNQUkjNS85PycxL
+t1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBLAwQUAAYACAAAACEApxKgiMMA
+AADbAAAADwAAAGRycy9kb3ducmV2LnhtbESPQWvCQBSE70L/w/KE3nRjDrZEN0FblF48NIrnR/Zl
+E82+Ddmtpv31bqHQ4zAz3zDrYrSduNHgW8cKFvMEBHHldMtGwem4m72C8AFZY+eYFHyThyJ/mqwx
+0+7On3QrgxERwj5DBU0IfSalrxqy6OeuJ45e7QaLIcrBSD3gPcJtJ9MkWUqLLceFBnt6a6i6ll9W
+AR/2R1/VF1NyvTy/JO+j+TFbpZ6n42YFItAY/sN/7Q+tIE3h90v8ATJ/AAAA//8DAFBLAQItABQA
+BgAIAAAAIQDw94q7/QAAAOIBAAATAAAAAAAAAAAAAAAAAAAAAABbQ29udGVudF9UeXBlc10ueG1s
+UEsBAi0AFAAGAAgAAAAhADHdX2HSAAAAjwEAAAsAAAAAAAAAAAAAAAAALgEAAF9yZWxzLy5yZWxz
+UEsBAi0AFAAGAAgAAAAhADMvBZ5BAAAAOQAAABAAAAAAAAAAAAAAAAAAKQIAAGRycy9zaGFwZXht
+bC54bWxQSwECLQAUAAYACAAAACEApxKgiMMAAADbAAAADwAAAAAAAAAAAAAAAACYAgAAZHJzL2Rv
+d25yZXYueG1sUEsFBgAAAAAEAAQA9QAAAIgDAAAAAA==
+" filled="f" strokeweight="1.5pt">
+   <o:lock v:ext="edit" aspectratio="t"/>
+   <v:textbox inset=".5mm,0,.5mm,0">
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='margin-right:-13.6pt'><b><i><span lang=EN-US
+      style='color:black;mso-ansi-language:EN-US'>Ctrl</span></i><o:p></o:p></b></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="AutoShape_x0020_24" o:spid="_x0000_s1048" type="#_x0000_t176"
+   alt=" Ctrl" style='position:absolute;left:2397;top:1795;width:485;height:314;
+   visibility:visible;mso-wrap-style:square;v-text-anchor:bottom' o:gfxdata="UEsDBBQABgAIAAAAIQDw94q7/QAAAOIBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRzUrEMBDH
+74LvEOYqbaoHEWm6B6tHFV0fYEimbdg2CZlYd9/edD8u4goeZ+b/8SOpV9tpFDNFtt4puC4rEOS0
+N9b1Cj7WT8UdCE7oDI7ekYIdMayay4t6vQvEIrsdKxhSCvdSsh5oQi59IJcvnY8TpjzGXgbUG+xJ
+3lTVrdTeJXKpSEsGNHVLHX6OSTxu8/pAEmlkEA8H4dKlAEMYrcaUSeXszI+W4thQZudew4MNfJUx
+QP7asFzOFxx9L/lpojUkXjGmZ5wyhjSRJQ8YKGvKv1MWzIkL33VWU9lGfl98J6hz4cZ/uUjzf7Pb
+bHuj+ZQu9z/UfAMAAP//AwBQSwMEFAAGAAgAAAAhADHdX2HSAAAAjwEAAAsAAABfcmVscy8ucmVs
+c6SQwWrDMAyG74O9g9G9cdpDGaNOb4VeSwe7CltJTGPLWCZt376mMFhGbzvqF/o+8e/2tzCpmbJ4
+jgbWTQuKomXn42Dg63xYfYCSgtHhxJEM3Elg372/7U40YalHMvokqlKiGBhLSZ9aix0poDScKNZN
+zzlgqWMedEJ7wYH0pm23Ov9mQLdgqqMzkI9uA+p8T9X8hx28zSzcl8Zy0Nz33r6iasfXeKK5UjAP
+VAy4LM8w09zU50C/9q7/6ZURE31X/kL8TKv1x6wXNXYPAAAA//8DAFBLAwQUAAYACAAAACEAMy8F
+nkEAAAA5AAAAEAAAAGRycy9zaGFwZXhtbC54bWyysa/IzVEoSy0qzszPs1Uy1DNQUkjNS85PycxL
+t1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBLAwQUAAYACAAAACEAyF4FE8IA
+AADbAAAADwAAAGRycy9kb3ducmV2LnhtbESPQWvCQBSE7wX/w/IEb3Wjgi2pq1RF8eKhUTw/si+b
+tNm3Ibtq9Ne7gtDjMDPfMLNFZ2txodZXjhWMhgkI4tzpio2C42Hz/gnCB2SNtWNScCMPi3nvbYap
+dlf+oUsWjIgQ9ikqKENoUil9XpJFP3QNcfQK11oMUbZG6havEW5rOU6SqbRYcVwosaFVSflfdrYK
+eL89+Lz4NRkX09NHsu7M3SyVGvS77y8QgbrwH361d1rBeALPL/EHyPkDAAD//wMAUEsBAi0AFAAG
+AAgAAAAhAPD3irv9AAAA4gEAABMAAAAAAAAAAAAAAAAAAAAAAFtDb250ZW50X1R5cGVzXS54bWxQ
+SwECLQAUAAYACAAAACEAMd1fYdIAAACPAQAACwAAAAAAAAAAAAAAAAAuAQAAX3JlbHMvLnJlbHNQ
+SwECLQAUAAYACAAAACEAMy8FnkEAAAA5AAAAEAAAAAAAAAAAAAAAAAApAgAAZHJzL3NoYXBleG1s
+LnhtbFBLAQItABQABgAIAAAAIQDIXgUTwgAAANsAAAAPAAAAAAAAAAAAAAAAAJgCAABkcnMvZG93
+bnJldi54bWxQSwUGAAAAAAQABAD1AAAAhwMAAAAA
+" filled="f" strokeweight="1.5pt">
+   <o:lock v:ext="edit" aspectratio="t"/>
+   <v:textbox inset=".5mm,0,.5mm,0">
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+      EN-US'>Alt</span></i><o:p></o:p></b></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="AutoShape_x0020_25" o:spid="_x0000_s1049" type="#_x0000_t176"
+   alt=" Ctrl" style='position:absolute;left:3224;top:1796;width:456;height:314;
+   visibility:visible;mso-wrap-style:square;v-text-anchor:bottom' o:gfxdata="UEsDBBQABgAIAAAAIQDw94q7/QAAAOIBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRzUrEMBDH
+74LvEOYqbaoHEWm6B6tHFV0fYEimbdg2CZlYd9/edD8u4goeZ+b/8SOpV9tpFDNFtt4puC4rEOS0
+N9b1Cj7WT8UdCE7oDI7ekYIdMayay4t6vQvEIrsdKxhSCvdSsh5oQi59IJcvnY8TpjzGXgbUG+xJ
+3lTVrdTeJXKpSEsGNHVLHX6OSTxu8/pAEmlkEA8H4dKlAEMYrcaUSeXszI+W4thQZudew4MNfJUx
+QP7asFzOFxx9L/lpojUkXjGmZ5wyhjSRJQ8YKGvKv1MWzIkL33VWU9lGfl98J6hz4cZ/uUjzf7Pb
+bHuj+ZQu9z/UfAMAAP//AwBQSwMEFAAGAAgAAAAhADHdX2HSAAAAjwEAAAsAAABfcmVscy8ucmVs
+c6SQwWrDMAyG74O9g9G9cdpDGaNOb4VeSwe7CltJTGPLWCZt376mMFhGbzvqF/o+8e/2tzCpmbJ4
+jgbWTQuKomXn42Dg63xYfYCSgtHhxJEM3Elg372/7U40YalHMvokqlKiGBhLSZ9aix0poDScKNZN
+zzlgqWMedEJ7wYH0pm23Ov9mQLdgqqMzkI9uA+p8T9X8hx28zSzcl8Zy0Nz33r6iasfXeKK5UjAP
+VAy4LM8w09zU50C/9q7/6ZURE31X/kL8TKv1x6wXNXYPAAAA//8DAFBLAwQUAAYACAAAACEAMy8F
+nkEAAAA5AAAAEAAAAGRycy9zaGFwZXhtbC54bWyysa/IzVEoSy0qzszPs1Uy1DNQUkjNS85PycxL
+t1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBLAwQUAAYACAAAACEAR7edZ8IA
+AADbAAAADwAAAGRycy9kb3ducmV2LnhtbESPQWvCQBSE7wX/w/IEb3WjiC2pq1RF8eKhUTw/si+b
+tNm3Ibtq9Ne7gtDjMDPfMLNFZ2txodZXjhWMhgkI4tzpio2C42Hz/gnCB2SNtWNScCMPi3nvbYap
+dlf+oUsWjIgQ9ikqKENoUil9XpJFP3QNcfQK11oMUbZG6havEW5rOU6SqbRYcVwosaFVSflfdrYK
+eL89+Lz4NRkX09NHsu7M3SyVGvS77y8QgbrwH361d1rBeALPL/EHyPkDAAD//wMAUEsBAi0AFAAG
+AAgAAAAhAPD3irv9AAAA4gEAABMAAAAAAAAAAAAAAAAAAAAAAFtDb250ZW50X1R5cGVzXS54bWxQ
+SwECLQAUAAYACAAAACEAMd1fYdIAAACPAQAACwAAAAAAAAAAAAAAAAAuAQAAX3JlbHMvLnJlbHNQ
+SwECLQAUAAYACAAAACEAMy8FnkEAAAA5AAAAEAAAAAAAAAAAAAAAAAApAgAAZHJzL3NoYXBleG1s
+LnhtbFBLAQItABQABgAIAAAAIQBHt51nwgAAANsAAAAPAAAAAAAAAAAAAAAAAJgCAABkcnMvZG93
+bnJldi54bWxQSwUGAAAAAAQABAD1AAAAhwMAAAAA
+" filled="f" strokeweight="1.5pt">
+   <o:lock v:ext="edit" aspectratio="t"/>
+   <v:textbox inset=".5mm,0,.5mm,0">
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+      EN-US'>F</span><span style='color:black'>7</span></i><o:p></o:p></b></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape></v:group></v:group><![endif]--><![if !vml]><span style='mso-ignore:
+vglayout;position:absolute;z-index:251662336;left:0px;margin-left:192px;
+margin-top:1px;width:149px;height:28px'><img width=149 height=28
+src="1%20ОСНОВНЫЕ%20КОМАНДЫ%20ОС%20UNIX.files/image001.png" v:shapes="Группа_x0020_14 Group_x0020_16 AutoShape_x0020_17 AutoShape_x0020_18 Group_x0020_19 AutoShape_x0020_20 AutoShape_x0020_21 Group_x0020_22 AutoShape_x0020_23 AutoShape_x0020_24 AutoShape_x0020_25"></span><![endif]><!--[if gte vml 1]><v:oval
+ id="Овал_x0020_13" o:spid="_x0000_s1038" style='position:absolute;left:0;
+ text-align:left;margin-left:114.05pt;margin-top:.85pt;width:17.9pt;height:16.65pt;
+ z-index:251661312;visibility:visible;mso-wrap-style:square;
+ mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:page;mso-height-relative:page;v-text-anchor:bottom'
+ o:gfxdata="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
+di54bWxQSwUGAAAAAAQABADzAAAAhwUAAAAA
+" strokecolor="#eaf1dd" strokeweight="0">
+ <v:textbox inset="0,0,0,0">
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>…<o:p></o:p></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+</v:oval><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251661312;left:0px;margin-left:151px;margin-top:0px;
+width:30px;height:28px'><img width=30 height=28
+src="1%20ОСНОВНЫЕ%20КОМАНДЫ%20ОС%20UNIX.files/image002.png" alt="Овал: …"
+v:shapes="Овал_x0020_13"></span><![endif]><!--[if gte vml 1]><v:group id="Группа_x0020_2"
+ o:spid="_x0000_s1027" style='position:absolute;left:0;text-align:left;
+ margin-left:5.05pt;margin-top:.8pt;width:106.9pt;height:15.75pt;z-index:251660288'
+ coordorigin="1542,1795" coordsize="2138,315" o:gfxdata="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
+">
+ <v:group id="Group_x0020_4" o:spid="_x0000_s1028" style='position:absolute;
+  left:2996;top:1863;width:178;height:162' coordorigin="9189,2155" coordsize="178,162"
+  o:gfxdata="UEsDBBQABgAIAAAAIQCi+E9TBAEAAOwBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRy07DMBBF
+90j8g+UtShxYIISadEGAHSAoHzCyJ4lFYlseN7R/z7iPDaJIXdpzz5wre7HcTKOYMZL1rpbXZSUF
+Ou2NdX0tP1dPxZ0UlMAZGL3DWm6R5LK5vFistgFJMO2olkNK4V4p0gNOQKUP6HjS+ThB4mPsVQD9
+BT2qm6q6Vdq7hC4VKe+QzaLFDtZjEo8bvt43iTiSFA/7YHbVEkIYrYbETdXszC9LcTCUTO4yNNhA
+V1xDqj8NeXJacOBe+WmiNSjeIKYXmLiGMpFUH/060AABOVj+vyp3najwXWc1lm2k5wx/ZPhY75TG
++G8XcT5X0DL2jvNxu9r9VfMDAAD//wMAUEsDBBQABgAIAAAAIQBsBtX+2AAAAJkBAAALAAAAX3Jl
+bHMvLnJlbHOkkMFKAzEQhu+C7xDm7mbbg4g025vQa63gNSSz2eAmE2biat/eWBBc6c3jzM9838/s
+9p9pVguyRMoGNl0PCrMjH3Mw8HJ6unsAJdVmb2fKaOCMAvvh9mZ3xNnWdiRTLKIaJYuBqdbyqLW4
+CZOVjgrmlozEydY2ctDFujcbUG/7/l7zbwYMK6Y6eAN88FtQp3Np5j/sFB2T0Fg7R0nTOEZ3jao9
+feQjLo1iOWA14FkuS8ala+VAX/du/ukNTO/lebIFX5tkZb9E8h01/08HvXro8AUAAP//AwBQSwME
+FAAGAAgAAAAhADMvBZ5BAAAAOQAAABUAAABkcnMvZ3JvdXBzaGFwZXhtbC54bWyysa/IzVEoSy0q
+zszPs1Uy1DNQUkjNS85PycxLt1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBL
+AwQUAAYACAAAACEA3Xy+x8MAAADaAAAADwAAAGRycy9kb3ducmV2LnhtbESPQYvCMBSE78L+h/AE
+b5pWUaQaRWRdPMiCVVj29miebbF5KU22rf/eLAgeh5n5hllve1OJlhpXWlYQTyIQxJnVJecKrpfD
+eAnCeWSNlWVS8CAH283HYI2Jth2fqU19LgKEXYIKCu/rREqXFWTQTWxNHLybbQz6IJtc6ga7ADeV
+nEbRQhosOSwUWNO+oOye/hkFXx12u1n82Z7ut/3j9zL//jnFpNRo2O9WIDz1/h1+tY9awQz+r4Qb
+IDdPAAAA//8DAFBLAQItABQABgAIAAAAIQCi+E9TBAEAAOwBAAATAAAAAAAAAAAAAAAAAAAAAABb
+Q29udGVudF9UeXBlc10ueG1sUEsBAi0AFAAGAAgAAAAhAGwG1f7YAAAAmQEAAAsAAAAAAAAAAAAA
+AAAANQEAAF9yZWxzLy5yZWxzUEsBAi0AFAAGAAgAAAAhADMvBZ5BAAAAOQAAABUAAAAAAAAAAAAA
+AAAANgIAAGRycy9ncm91cHNoYXBleG1sLnhtbFBLAQItABQABgAIAAAAIQDdfL7HwwAAANoAAAAP
+AAAAAAAAAAAAAAAAAKoCAABkcnMvZG93bnJldi54bWxQSwUGAAAAAAQABAD6AAAAmgMAAAAA
+">
+  <v:shape id="AutoShape_x0020_5" o:spid="_x0000_s1029" type="#_x0000_t32"
+   style='position:absolute;left:9189;top:2238;width:178;height:0;visibility:visible;
+   mso-wrap-style:square' o:connectortype="straight" o:gfxdata="UEsDBBQABgAIAAAAIQD+JeulAAEAAOoBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRzU7EIBDH
+7ya+A+FqWqoHY0zpHqwe1Zj1AQhMW2I7EAbr7ts73e5ejGviEeb/8RuoN7tpFDMk8gG1vC4rKQBt
+cB57Ld+3T8WdFJQNOjMGBC33QHLTXF7U230EEuxG0nLIOd4rRXaAyVAZIiBPupAmk/mYehWN/TA9
+qJuqulU2YAbMRV4yZFO30JnPMYvHHV+vJAlGkuJhFS5dWpoYR29NZlI1o/vRUhwbSnYeNDT4SFeM
+IdWvDcvkfMHR98JPk7wD8WpSfjYTYyiXaNkAweaQWFf+nbSgTlSErvMWyjYRL7V6T3DnSlz4wgTz
+f/Nbtr3BfEpXh59qvgEAAP//AwBQSwMEFAAGAAgAAAAhAJYFM1jUAAAAlwEAAAsAAABfcmVscy8u
+cmVsc6SQPWsDMQyG90L/g9He8yVDKSW+bIWsIYWuxtZ9kLNkJHNN/n1MoaVXsnWUXvQ8L9rtL2k2
+C4pOTA42TQsGKXCcaHDwfnp7egGjxVP0MxM6uKLCvnt82B1x9qUe6ThlNZVC6mAsJb9aq2HE5LXh
+jFSTniX5UkcZbPbh7Ae027Z9tvKbAd2KaQ7RgRziFszpmqv5DztNQVi5L03gZLnvp3CPaiN/0hGX
+SvEyYHEQRb+WgktTy4G979380xuYCENh+aiOlfwnqfbvBnb1zu4GAAD//wMAUEsDBBQABgAIAAAA
+IQAzLwWeQQAAADkAAAAUAAAAZHJzL2Nvbm5lY3RvcnhtbC54bWyysa/IzVEoSy0qzszPs1Uy1DNQ
+UkjNS85PycxLt1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBLAwQUAAYACAAA
+ACEAjP2ChsIAAADaAAAADwAAAGRycy9kb3ducmV2LnhtbESPQYvCMBSE74L/ITzBi2iqyFqrUVQQ
+ZG9bRTw+mmdbbF5Kk9buv98sLOxxmJlvmO2+N5XoqHGlZQXzWQSCOLO65FzB7XqexiCcR9ZYWSYF
+3+RgvxsOtpho++Yv6lKfiwBhl6CCwvs6kdJlBRl0M1sTB+9pG4M+yCaXusF3gJtKLqLoQxosOSwU
+WNOpoOyVtkZBW31Oru3dz7v82K2e8Tp+9A+n1HjUHzYgPPX+P/zXvmgFS/i9Em6A3P0AAAD//wMA
+UEsBAi0AFAAGAAgAAAAhAP4l66UAAQAA6gEAABMAAAAAAAAAAAAAAAAAAAAAAFtDb250ZW50X1R5
+cGVzXS54bWxQSwECLQAUAAYACAAAACEAlgUzWNQAAACXAQAACwAAAAAAAAAAAAAAAAAxAQAAX3Jl
+bHMvLnJlbHNQSwECLQAUAAYACAAAACEAMy8FnkEAAAA5AAAAFAAAAAAAAAAAAAAAAAAuAgAAZHJz
+L2Nvbm5lY3RvcnhtbC54bWxQSwECLQAUAAYACAAAACEAjP2ChsIAAADaAAAADwAAAAAAAAAAAAAA
+AAChAgAAZHJzL2Rvd25yZXYueG1sUEsFBgAAAAAEAAQA+QAAAJADAAAAAA==
+" strokeweight="1pt"/>
+  <v:shape id="AutoShape_x0020_6" o:spid="_x0000_s1030" type="#_x0000_t32"
+   style='position:absolute;left:9281;top:2155;width:0;height:162;visibility:visible;
+   mso-wrap-style:square' o:connectortype="straight" o:gfxdata="UEsDBBQABgAIAAAAIQD+JeulAAEAAOoBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRzU7EIBDH
+7ya+A+FqWqoHY0zpHqwe1Zj1AQhMW2I7EAbr7ts73e5ejGviEeb/8RuoN7tpFDMk8gG1vC4rKQBt
+cB57Ld+3T8WdFJQNOjMGBC33QHLTXF7U230EEuxG0nLIOd4rRXaAyVAZIiBPupAmk/mYehWN/TA9
+qJuqulU2YAbMRV4yZFO30JnPMYvHHV+vJAlGkuJhFS5dWpoYR29NZlI1o/vRUhwbSnYeNDT4SFeM
+IdWvDcvkfMHR98JPk7wD8WpSfjYTYyiXaNkAweaQWFf+nbSgTlSErvMWyjYRL7V6T3DnSlz4wgTz
+f/Nbtr3BfEpXh59qvgEAAP//AwBQSwMEFAAGAAgAAAAhAJYFM1jUAAAAlwEAAAsAAABfcmVscy8u
+cmVsc6SQPWsDMQyG90L/g9He8yVDKSW+bIWsIYWuxtZ9kLNkJHNN/n1MoaVXsnWUXvQ8L9rtL2k2
+C4pOTA42TQsGKXCcaHDwfnp7egGjxVP0MxM6uKLCvnt82B1x9qUe6ThlNZVC6mAsJb9aq2HE5LXh
+jFSTniX5UkcZbPbh7Ae027Z9tvKbAd2KaQ7RgRziFszpmqv5DztNQVi5L03gZLnvp3CPaiN/0hGX
+SvEyYHEQRb+WgktTy4G979380xuYCENh+aiOlfwnqfbvBnb1zu4GAAD//wMAUEsDBBQABgAIAAAA
+IQAzLwWeQQAAADkAAAAUAAAAZHJzL2Nvbm5lY3RvcnhtbC54bWyysa/IzVEoSy0qzszPs1Uy1DNQ
+UkjNS85PycxLt1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBLAwQUAAYACAAA
+ACEA47EnHcIAAADaAAAADwAAAGRycy9kb3ducmV2LnhtbESPQYvCMBSE74L/ITzBi2iq4FqrUVQQ
+ZG9bRTw+mmdbbF5Kk9buv98sLOxxmJlvmO2+N5XoqHGlZQXzWQSCOLO65FzB7XqexiCcR9ZYWSYF
+3+RgvxsOtpho++Yv6lKfiwBhl6CCwvs6kdJlBRl0M1sTB+9pG4M+yCaXusF3gJtKLqLoQxosOSwU
+WNOpoOyVtkZBW31Oru3dz7v82K2e8Tp+9A+n1HjUHzYgPPX+P/zXvmgFS/i9Em6A3P0AAAD//wMA
+UEsBAi0AFAAGAAgAAAAhAP4l66UAAQAA6gEAABMAAAAAAAAAAAAAAAAAAAAAAFtDb250ZW50X1R5
+cGVzXS54bWxQSwECLQAUAAYACAAAACEAlgUzWNQAAACXAQAACwAAAAAAAAAAAAAAAAAxAQAAX3Jl
+bHMvLnJlbHNQSwECLQAUAAYACAAAACEAMy8FnkEAAAA5AAAAFAAAAAAAAAAAAAAAAAAuAgAAZHJz
+L2Nvbm5lY3RvcnhtbC54bWxQSwECLQAUAAYACAAAACEA47EnHcIAAADaAAAADwAAAAAAAAAAAAAA
+AAChAgAAZHJzL2Rvd25yZXYueG1sUEsFBgAAAAAEAAQA+QAAAJADAAAAAA==
+" strokeweight="1pt"/>
+ </v:group><v:group id="Group_x0020_7" o:spid="_x0000_s1031" style='position:absolute;
+  left:2156;top:1863;width:178;height:162' coordorigin="9189,2155" coordsize="178,162"
+  o:gfxdata="UEsDBBQABgAIAAAAIQCi+E9TBAEAAOwBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRy07DMBBF
+90j8g+UtShxYIISadEGAHSAoHzCyJ4lFYlseN7R/z7iPDaJIXdpzz5wre7HcTKOYMZL1rpbXZSUF
+Ou2NdX0tP1dPxZ0UlMAZGL3DWm6R5LK5vFistgFJMO2olkNK4V4p0gNOQKUP6HjS+ThB4mPsVQD9
+BT2qm6q6Vdq7hC4VKe+QzaLFDtZjEo8bvt43iTiSFA/7YHbVEkIYrYbETdXszC9LcTCUTO4yNNhA
+V1xDqj8NeXJacOBe+WmiNSjeIKYXmLiGMpFUH/060AABOVj+vyp3najwXWc1lm2k5wx/ZPhY75TG
++G8XcT5X0DL2jvNxu9r9VfMDAAD//wMAUEsDBBQABgAIAAAAIQBsBtX+2AAAAJkBAAALAAAAX3Jl
+bHMvLnJlbHOkkMFKAzEQhu+C7xDm7mbbg4g025vQa63gNSSz2eAmE2biat/eWBBc6c3jzM9838/s
+9p9pVguyRMoGNl0PCrMjH3Mw8HJ6unsAJdVmb2fKaOCMAvvh9mZ3xNnWdiRTLKIaJYuBqdbyqLW4
+CZOVjgrmlozEydY2ctDFujcbUG/7/l7zbwYMK6Y6eAN88FtQp3Np5j/sFB2T0Fg7R0nTOEZ3jao9
+feQjLo1iOWA14FkuS8ala+VAX/du/ukNTO/lebIFX5tkZb9E8h01/08HvXro8AUAAP//AwBQSwME
+FAAGAAgAAAAhADMvBZ5BAAAAOQAAABUAAABkcnMvZ3JvdXBzaGFwZXhtbC54bWyysa/IzVEoSy0q
+zszPs1Uy1DNQUkjNS85PycxLt1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBL
+AwQUAAYACAAAACEAzQsdX8IAAADaAAAADwAAAGRycy9kb3ducmV2LnhtbESPQYvCMBSE7wv+h/AE
+b2taZUWqUURUPIiwKoi3R/Nsi81LaWJb/71ZEPY4zMw3zHzZmVI0VLvCsoJ4GIEgTq0uOFNwOW+/
+pyCcR9ZYWiYFL3KwXPS+5pho2/IvNSefiQBhl6CC3PsqkdKlORl0Q1sRB+9ua4M+yDqTusY2wE0p
+R1E0kQYLDgs5VrTOKX2cnkbBrsV2NY43zeFxX79u55/j9RCTUoN+t5qB8NT5//CnvdcKJvB3JdwA
+uXgDAAD//wMAUEsBAi0AFAAGAAgAAAAhAKL4T1MEAQAA7AEAABMAAAAAAAAAAAAAAAAAAAAAAFtD
+b250ZW50X1R5cGVzXS54bWxQSwECLQAUAAYACAAAACEAbAbV/tgAAACZAQAACwAAAAAAAAAAAAAA
+AAA1AQAAX3JlbHMvLnJlbHNQSwECLQAUAAYACAAAACEAMy8FnkEAAAA5AAAAFQAAAAAAAAAAAAAA
+AAA2AgAAZHJzL2dyb3Vwc2hhcGV4bWwueG1sUEsBAi0AFAAGAAgAAAAhAM0LHV/CAAAA2gAAAA8A
+AAAAAAAAAAAAAAAAqgIAAGRycy9kb3ducmV2LnhtbFBLBQYAAAAABAAEAPoAAACZAwAAAAA=
+">
+  <v:shape id="AutoShape_x0020_8" o:spid="_x0000_s1032" type="#_x0000_t32"
+   style='position:absolute;left:9189;top:2238;width:178;height:0;visibility:visible;
+   mso-wrap-style:square' o:connectortype="straight" o:gfxdata="UEsDBBQABgAIAAAAIQD+JeulAAEAAOoBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRzU7EIBDH
+7ya+A+FqWqoHY0zpHqwe1Zj1AQhMW2I7EAbr7ts73e5ejGviEeb/8RuoN7tpFDMk8gG1vC4rKQBt
+cB57Ld+3T8WdFJQNOjMGBC33QHLTXF7U230EEuxG0nLIOd4rRXaAyVAZIiBPupAmk/mYehWN/TA9
+qJuqulU2YAbMRV4yZFO30JnPMYvHHV+vJAlGkuJhFS5dWpoYR29NZlI1o/vRUhwbSnYeNDT4SFeM
+IdWvDcvkfMHR98JPk7wD8WpSfjYTYyiXaNkAweaQWFf+nbSgTlSErvMWyjYRL7V6T3DnSlz4wgTz
+f/Nbtr3BfEpXh59qvgEAAP//AwBQSwMEFAAGAAgAAAAhAJYFM1jUAAAAlwEAAAsAAABfcmVscy8u
+cmVsc6SQPWsDMQyG90L/g9He8yVDKSW+bIWsIYWuxtZ9kLNkJHNN/n1MoaVXsnWUXvQ8L9rtL2k2
+C4pOTA42TQsGKXCcaHDwfnp7egGjxVP0MxM6uKLCvnt82B1x9qUe6ThlNZVC6mAsJb9aq2HE5LXh
+jFSTniX5UkcZbPbh7Ae027Z9tvKbAd2KaQ7RgRziFszpmqv5DztNQVi5L03gZLnvp3CPaiN/0hGX
+SvEyYHEQRb+WgktTy4G979380xuYCENh+aiOlfwnqfbvBnb1zu4GAAD//wMAUEsDBBQABgAIAAAA
+IQAzLwWeQQAAADkAAAAUAAAAZHJzL2Nvbm5lY3RvcnhtbC54bWyysa/IzVEoSy0qzszPs1Uy1DNQ
+UkjNS85PycxLt1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBLAwQUAAYACAAA
+ACEAfC8c8cMAAADaAAAADwAAAGRycy9kb3ducmV2LnhtbESPT2vCQBTE74LfYXmFXqRu7EFj6iq2
+UBBvTURyfGSfSWj2bchu/vTbu4LQ4zAzv2F2h8k0YqDO1ZYVrJYRCOLC6ppLBZfs+y0G4TyyxsYy
+KfgjB4f9fLbDRNuRf2hIfSkChF2CCirv20RKV1Rk0C1tSxy8m+0M+iC7UuoOxwA3jXyPorU0WHNY
+qLClr4qK37Q3CvrmvMj6q18N5eewucXbOJ9yp9Try3T8AOFp8v/hZ/ukFWzgcSXcALm/AwAA//8D
+AFBLAQItABQABgAIAAAAIQD+JeulAAEAAOoBAAATAAAAAAAAAAAAAAAAAAAAAABbQ29udGVudF9U
+eXBlc10ueG1sUEsBAi0AFAAGAAgAAAAhAJYFM1jUAAAAlwEAAAsAAAAAAAAAAAAAAAAAMQEAAF9y
+ZWxzLy5yZWxzUEsBAi0AFAAGAAgAAAAhADMvBZ5BAAAAOQAAABQAAAAAAAAAAAAAAAAALgIAAGRy
+cy9jb25uZWN0b3J4bWwueG1sUEsBAi0AFAAGAAgAAAAhAHwvHPHDAAAA2gAAAA8AAAAAAAAAAAAA
+AAAAoQIAAGRycy9kb3ducmV2LnhtbFBLBQYAAAAABAAEAPkAAACRAwAAAAA=
+" strokeweight="1pt"/>
+  <v:shape id="AutoShape_x0020_9" o:spid="_x0000_s1033" type="#_x0000_t32"
+   style='position:absolute;left:9281;top:2155;width:0;height:162;visibility:visible;
+   mso-wrap-style:square' o:connectortype="straight" o:gfxdata="UEsDBBQABgAIAAAAIQD+JeulAAEAAOoBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRzU7EIBDH
+7ya+A+FqWqoHY0zpHqwe1Zj1AQhMW2I7EAbr7ts73e5ejGviEeb/8RuoN7tpFDMk8gG1vC4rKQBt
+cB57Ld+3T8WdFJQNOjMGBC33QHLTXF7U230EEuxG0nLIOd4rRXaAyVAZIiBPupAmk/mYehWN/TA9
+qJuqulU2YAbMRV4yZFO30JnPMYvHHV+vJAlGkuJhFS5dWpoYR29NZlI1o/vRUhwbSnYeNDT4SFeM
+IdWvDcvkfMHR98JPk7wD8WpSfjYTYyiXaNkAweaQWFf+nbSgTlSErvMWyjYRL7V6T3DnSlz4wgTz
+f/Nbtr3BfEpXh59qvgEAAP//AwBQSwMEFAAGAAgAAAAhAJYFM1jUAAAAlwEAAAsAAABfcmVscy8u
+cmVsc6SQPWsDMQyG90L/g9He8yVDKSW+bIWsIYWuxtZ9kLNkJHNN/n1MoaVXsnWUXvQ8L9rtL2k2
+C4pOTA42TQsGKXCcaHDwfnp7egGjxVP0MxM6uKLCvnt82B1x9qUe6ThlNZVC6mAsJb9aq2HE5LXh
+jFSTniX5UkcZbPbh7Ae027Z9tvKbAd2KaQ7RgRziFszpmqv5DztNQVi5L03gZLnvp3CPaiN/0hGX
+SvEyYHEQRb+WgktTy4G979380xuYCENh+aiOlfwnqfbvBnb1zu4GAAD//wMAUEsDBBQABgAIAAAA
+IQAzLwWeQQAAADkAAAAUAAAAZHJzL2Nvbm5lY3RvcnhtbC54bWyysa/IzVEoSy0qzszPs1Uy1DNQ
+UkjNS85PycxLt1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBLAwQUAAYACAAA
+ACEADbCIg78AAADaAAAADwAAAGRycy9kb3ducmV2LnhtbERPy4rCMBTdC/5DuMJsRFNnobU2ijMw
+IO58IC4vze0Dm5vSpLXz92YhuDycd7obTC16al1lWcFiHoEgzqyuuFBwvfzNYhDOI2usLZOCf3Kw
+245HKSbaPvlE/dkXIoSwS1BB6X2TSOmykgy6uW2IA5fb1qAPsC2kbvEZwk0tv6NoKQ1WHBpKbOi3
+pOxx7oyCrj5OL93NL/rip1/l8Tq+D3en1Ndk2G9AeBr8R/x2H7SCsDVcCTdAbl8AAAD//wMAUEsB
+Ai0AFAAGAAgAAAAhAP4l66UAAQAA6gEAABMAAAAAAAAAAAAAAAAAAAAAAFtDb250ZW50X1R5cGVz
+XS54bWxQSwECLQAUAAYACAAAACEAlgUzWNQAAACXAQAACwAAAAAAAAAAAAAAAAAxAQAAX3JlbHMv
+LnJlbHNQSwECLQAUAAYACAAAACEAMy8FnkEAAAA5AAAAFAAAAAAAAAAAAAAAAAAuAgAAZHJzL2Nv
+bm5lY3RvcnhtbC54bWxQSwECLQAUAAYACAAAACEADbCIg78AAADaAAAADwAAAAAAAAAAAAAAAACh
+AgAAZHJzL2Rvd25yZXYueG1sUEsFBgAAAAAEAAQA+QAAAI0DAAAAAA==
+" strokeweight="1pt"/>
+ </v:group><v:group id="Group_x0020_10" o:spid="_x0000_s1034" style='position:absolute;
+  left:1542;top:1795;width:2138;height:315' coordorigin="1542,1795"
+  coordsize="2138,315" o:gfxdata="UEsDBBQABgAIAAAAIQCi+E9TBAEAAOwBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRy07DMBBF
+90j8g+UtShxYIISadEGAHSAoHzCyJ4lFYlseN7R/z7iPDaJIXdpzz5wre7HcTKOYMZL1rpbXZSUF
+Ou2NdX0tP1dPxZ0UlMAZGL3DWm6R5LK5vFistgFJMO2olkNK4V4p0gNOQKUP6HjS+ThB4mPsVQD9
+BT2qm6q6Vdq7hC4VKe+QzaLFDtZjEo8bvt43iTiSFA/7YHbVEkIYrYbETdXszC9LcTCUTO4yNNhA
+V1xDqj8NeXJacOBe+WmiNSjeIKYXmLiGMpFUH/060AABOVj+vyp3najwXWc1lm2k5wx/ZPhY75TG
++G8XcT5X0DL2jvNxu9r9VfMDAAD//wMAUEsDBBQABgAIAAAAIQBsBtX+2AAAAJkBAAALAAAAX3Jl
+bHMvLnJlbHOkkMFKAzEQhu+C7xDm7mbbg4g025vQa63gNSSz2eAmE2biat/eWBBc6c3jzM9838/s
+9p9pVguyRMoGNl0PCrMjH3Mw8HJ6unsAJdVmb2fKaOCMAvvh9mZ3xNnWdiRTLKIaJYuBqdbyqLW4
+CZOVjgrmlozEydY2ctDFujcbUG/7/l7zbwYMK6Y6eAN88FtQp3Np5j/sFB2T0Fg7R0nTOEZ3jao9
+feQjLo1iOWA14FkuS8ala+VAX/du/ukNTO/lebIFX5tkZb9E8h01/08HvXro8AUAAP//AwBQSwME
+FAAGAAgAAAAhADMvBZ5BAAAAOQAAABUAAABkcnMvZ3JvdXBzaGFwZXhtbC54bWyysa/IzVEoSy0q
+zszPs1Uy1DNQUkjNS85PycxLt1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBL
+AwQUAAYACAAAACEAvJSJLcUAAADaAAAADwAAAGRycy9kb3ducmV2LnhtbESPT2vCQBTE7wW/w/KE
+3uomSkuNrhJCLT2EQlUQb4/sMwlm34bsNn++fbdQ6HGYmd8w2/1oGtFT52rLCuJFBIK4sLrmUsH5
+dHh6BeE8ssbGMimYyMF+N3vYYqLtwF/UH30pAoRdggoq79tESldUZNAtbEscvJvtDPogu1LqDocA
+N41cRtGLNFhzWKiwpayi4n78NgreBxzSVfzW5/dbNl1Pz5+XPCalHudjugHhafT/4b/2h1awht8r
+4QbI3Q8AAAD//wMAUEsBAi0AFAAGAAgAAAAhAKL4T1MEAQAA7AEAABMAAAAAAAAAAAAAAAAAAAAA
+AFtDb250ZW50X1R5cGVzXS54bWxQSwECLQAUAAYACAAAACEAbAbV/tgAAACZAQAACwAAAAAAAAAA
+AAAAAAA1AQAAX3JlbHMvLnJlbHNQSwECLQAUAAYACAAAACEAMy8FnkEAAAA5AAAAFQAAAAAAAAAA
+AAAAAAA2AgAAZHJzL2dyb3Vwc2hhcGV4bWwueG1sUEsBAi0AFAAGAAgAAAAhALyUiS3FAAAA2gAA
+AA8AAAAAAAAAAAAAAAAAqgIAAGRycy9kb3ducmV2LnhtbFBLBQYAAAAABAAEAPoAAACcAwAAAAA=
+">
+  <v:shape id="AutoShape_x0020_11" o:spid="_x0000_s1035" type="#_x0000_t176"
+   alt=" Ctrl" style='position:absolute;left:1542;top:1795;width:563;height:315;
+   visibility:visible;mso-wrap-style:square;v-text-anchor:bottom' o:gfxdata="UEsDBBQABgAIAAAAIQDw94q7/QAAAOIBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRzUrEMBDH
+74LvEOYqbaoHEWm6B6tHFV0fYEimbdg2CZlYd9/edD8u4goeZ+b/8SOpV9tpFDNFtt4puC4rEOS0
+N9b1Cj7WT8UdCE7oDI7ekYIdMayay4t6vQvEIrsdKxhSCvdSsh5oQi59IJcvnY8TpjzGXgbUG+xJ
+3lTVrdTeJXKpSEsGNHVLHX6OSTxu8/pAEmlkEA8H4dKlAEMYrcaUSeXszI+W4thQZudew4MNfJUx
+QP7asFzOFxx9L/lpojUkXjGmZ5wyhjSRJQ8YKGvKv1MWzIkL33VWU9lGfl98J6hz4cZ/uUjzf7Pb
+bHuj+ZQu9z/UfAMAAP//AwBQSwMEFAAGAAgAAAAhADHdX2HSAAAAjwEAAAsAAABfcmVscy8ucmVs
+c6SQwWrDMAyG74O9g9G9cdpDGaNOb4VeSwe7CltJTGPLWCZt376mMFhGbzvqF/o+8e/2tzCpmbJ4
+jgbWTQuKomXn42Dg63xYfYCSgtHhxJEM3Elg372/7U40YalHMvokqlKiGBhLSZ9aix0poDScKNZN
+zzlgqWMedEJ7wYH0pm23Ov9mQLdgqqMzkI9uA+p8T9X8hx28zSzcl8Zy0Nz33r6iasfXeKK5UjAP
+VAy4LM8w09zU50C/9q7/6ZURE31X/kL8TKv1x6wXNXYPAAAA//8DAFBLAwQUAAYACAAAACEAMy8F
+nkEAAAA5AAAAEAAAAGRycy9zaGFwZXhtbC54bWyysa/IzVEoSy0qzszPs1Uy1DNQUkjNS85PycxL
+t1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBLAwQUAAYACAAAACEA9uBR2cMA
+AADbAAAADwAAAGRycy9kb3ducmV2LnhtbESPQW/CMAyF75P4D5GRuI2UHRgqBARMQ7vssII4W42b
+FhqnajLo9uvnwyRutt7ze59Xm8G36kZ9bAIbmE0zUMRlsA07A6fj+/MCVEzIFtvAZOCHImzWo6cV
+5jbc+YtuRXJKQjjmaKBOqcu1jmVNHuM0dMSiVaH3mGTtnbY93iXct/oly+baY8PSUGNH+5rKa/Ht
+DfDn4RjL6uIKrubn1+xtcL9uZ8xkPGyXoBIN6WH+v/6wgi/08osMoNd/AAAA//8DAFBLAQItABQA
+BgAIAAAAIQDw94q7/QAAAOIBAAATAAAAAAAAAAAAAAAAAAAAAABbQ29udGVudF9UeXBlc10ueG1s
+UEsBAi0AFAAGAAgAAAAhADHdX2HSAAAAjwEAAAsAAAAAAAAAAAAAAAAALgEAAF9yZWxzLy5yZWxz
+UEsBAi0AFAAGAAgAAAAhADMvBZ5BAAAAOQAAABAAAAAAAAAAAAAAAAAAKQIAAGRycy9zaGFwZXht
+bC54bWxQSwECLQAUAAYACAAAACEA9uBR2cMAAADbAAAADwAAAAAAAAAAAAAAAACYAgAAZHJzL2Rv
+d25yZXYueG1sUEsFBgAAAAAEAAQA9QAAAIgDAAAAAA==
+" filled="f" strokeweight="1.5pt">
+   <o:lock v:ext="edit" aspectratio="t"/>
+   <v:textbox inset=".5mm,0,.5mm,0">
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='margin-right:-13.6pt'><b><i><span lang=EN-US
+      style='color:black;mso-ansi-language:EN-US'>Ctrl</span></i><o:p></o:p></b></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="AutoShape_x0020_12" o:spid="_x0000_s1036" type="#_x0000_t176"
+   alt=" Ctrl" style='position:absolute;left:2397;top:1795;width:485;height:314;
+   visibility:visible;mso-wrap-style:square;v-text-anchor:bottom' o:gfxdata="UEsDBBQABgAIAAAAIQDw94q7/QAAAOIBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRzUrEMBDH
+74LvEOYqbaoHEWm6B6tHFV0fYEimbdg2CZlYd9/edD8u4goeZ+b/8SOpV9tpFDNFtt4puC4rEOS0
+N9b1Cj7WT8UdCE7oDI7ekYIdMayay4t6vQvEIrsdKxhSCvdSsh5oQi59IJcvnY8TpjzGXgbUG+xJ
+3lTVrdTeJXKpSEsGNHVLHX6OSTxu8/pAEmlkEA8H4dKlAEMYrcaUSeXszI+W4thQZudew4MNfJUx
+QP7asFzOFxx9L/lpojUkXjGmZ5wyhjSRJQ8YKGvKv1MWzIkL33VWU9lGfl98J6hz4cZ/uUjzf7Pb
+bHuj+ZQu9z/UfAMAAP//AwBQSwMEFAAGAAgAAAAhADHdX2HSAAAAjwEAAAsAAABfcmVscy8ucmVs
+c6SQwWrDMAyG74O9g9G9cdpDGaNOb4VeSwe7CltJTGPLWCZt376mMFhGbzvqF/o+8e/2tzCpmbJ4
+jgbWTQuKomXn42Dg63xYfYCSgtHhxJEM3Elg372/7U40YalHMvokqlKiGBhLSZ9aix0poDScKNZN
+zzlgqWMedEJ7wYH0pm23Ov9mQLdgqqMzkI9uA+p8T9X8hx28zSzcl8Zy0Nz33r6iasfXeKK5UjAP
+VAy4LM8w09zU50C/9q7/6ZURE31X/kL8TKv1x6wXNXYPAAAA//8DAFBLAwQUAAYACAAAACEAMy8F
+nkEAAAA5AAAAEAAAAGRycy9zaGFwZXhtbC54bWyysa/IzVEoSy0qzszPs1Uy1DNQUkjNS85PycxL
+t1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBLAwQUAAYACAAAACEAmaz0QsAA
+AADbAAAADwAAAGRycy9kb3ducmV2LnhtbERPS4vCMBC+L/gfwgh7W1M96FKN4gNlLx6s4nlopmm1
+mZQmand/vRGEvc3H95zZorO1uFPrK8cKhoMEBHHudMVGwem4/foG4QOyxtoxKfglD4t572OGqXYP
+PtA9C0bEEPYpKihDaFIpfV6SRT9wDXHkCtdaDBG2RuoWHzHc1nKUJGNpseLYUGJD65Lya3azCni/
+O/q8uJiMi/F5kmw682dWSn32u+UURKAu/Ivf7h8d5w/h9Us8QM6fAAAA//8DAFBLAQItABQABgAI
+AAAAIQDw94q7/QAAAOIBAAATAAAAAAAAAAAAAAAAAAAAAABbQ29udGVudF9UeXBlc10ueG1sUEsB
+Ai0AFAAGAAgAAAAhADHdX2HSAAAAjwEAAAsAAAAAAAAAAAAAAAAALgEAAF9yZWxzLy5yZWxzUEsB
+Ai0AFAAGAAgAAAAhADMvBZ5BAAAAOQAAABAAAAAAAAAAAAAAAAAAKQIAAGRycy9zaGFwZXhtbC54
+bWxQSwECLQAUAAYACAAAACEAmaz0QsAAAADbAAAADwAAAAAAAAAAAAAAAACYAgAAZHJzL2Rvd25y
+ZXYueG1sUEsFBgAAAAAEAAQA9QAAAIUDAAAAAA==
+" filled="f" strokeweight="1.5pt">
+   <o:lock v:ext="edit" aspectratio="t"/>
+   <v:textbox inset=".5mm,0,.5mm,0">
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+      EN-US'>Alt</span></i><o:p></o:p></b></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="AutoShape_x0020_13" o:spid="_x0000_s1037" type="#_x0000_t176"
+   alt=" Ctrl" style='position:absolute;left:3224;top:1796;width:456;height:314;
+   visibility:visible;mso-wrap-style:square;v-text-anchor:bottom' o:gfxdata="UEsDBBQABgAIAAAAIQDw94q7/QAAAOIBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRzUrEMBDH
+74LvEOYqbaoHEWm6B6tHFV0fYEimbdg2CZlYd9/edD8u4goeZ+b/8SOpV9tpFDNFtt4puC4rEOS0
+N9b1Cj7WT8UdCE7oDI7ekYIdMayay4t6vQvEIrsdKxhSCvdSsh5oQi59IJcvnY8TpjzGXgbUG+xJ
+3lTVrdTeJXKpSEsGNHVLHX6OSTxu8/pAEmlkEA8H4dKlAEMYrcaUSeXszI+W4thQZudew4MNfJUx
+QP7asFzOFxx9L/lpojUkXjGmZ5wyhjSRJQ8YKGvKv1MWzIkL33VWU9lGfl98J6hz4cZ/uUjzf7Pb
+bHuj+ZQu9z/UfAMAAP//AwBQSwMEFAAGAAgAAAAhADHdX2HSAAAAjwEAAAsAAABfcmVscy8ucmVs
+c6SQwWrDMAyG74O9g9G9cdpDGaNOb4VeSwe7CltJTGPLWCZt376mMFhGbzvqF/o+8e/2tzCpmbJ4
+jgbWTQuKomXn42Dg63xYfYCSgtHhxJEM3Elg372/7U40YalHMvokqlKiGBhLSZ9aix0poDScKNZN
+zzlgqWMedEJ7wYH0pm23Ov9mQLdgqqMzkI9uA+p8T9X8hx28zSzcl8Zy0Nz33r6iasfXeKK5UjAP
+VAy4LM8w09zU50C/9q7/6ZURE31X/kL8TKv1x6wXNXYPAAAA//8DAFBLAwQUAAYACAAAACEAMy8F
+nkEAAAA5AAAAEAAAAGRycy9zaGFwZXhtbC54bWyysa/IzVEoSy0qzszPs1Uy1DNQUkjNS85PycxL
+t1UKDXHTtVBSKC5JzEtJzMnPS7VVqkwtVrK34+UCAAAA//8DAFBLAwQUAAYACAAAACEAaX5qNcAA
+AADbAAAADwAAAGRycy9kb3ducmV2LnhtbERPS4vCMBC+L/gfwgje1lQPulSj+EDxsoet4nlopmm1
+mZQmavXXb4SFvc3H95z5srO1uFPrK8cKRsMEBHHudMVGwem4+/wC4QOyxtoxKXiSh+Wi9zHHVLsH
+/9A9C0bEEPYpKihDaFIpfV6SRT90DXHkCtdaDBG2RuoWHzHc1nKcJBNpseLYUGJDm5Lya3azCvh7
+f/R5cTEZF5PzNNl25mXWSg363WoGIlAX/sV/7oOO88fw/iUeIBe/AAAA//8DAFBLAQItABQABgAI
+AAAAIQDw94q7/QAAAOIBAAATAAAAAAAAAAAAAAAAAAAAAABbQ29udGVudF9UeXBlc10ueG1sUEsB
+Ai0AFAAGAAgAAAAhADHdX2HSAAAAjwEAAAsAAAAAAAAAAAAAAAAALgEAAF9yZWxzLy5yZWxzUEsB
+Ai0AFAAGAAgAAAAhADMvBZ5BAAAAOQAAABAAAAAAAAAAAAAAAAAAKQIAAGRycy9zaGFwZXhtbC54
+bWxQSwECLQAUAAYACAAAACEAaX5qNcAAAADbAAAADwAAAAAAAAAAAAAAAACYAgAAZHJzL2Rvd25y
+ZXYueG1sUEsFBgAAAAAEAAQA9QAAAIUDAAAAAA==
+" filled="f" strokeweight="1.5pt">
+   <o:lock v:ext="edit" aspectratio="t"/>
+   <v:textbox inset=".5mm,0,.5mm,0">
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+      EN-US'>F1</span></i></b><b><span lang=EN-US style='mso-ansi-language:
+      EN-US'><o:p></o:p></span></b></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape></v:group></v:group><![endif]--><![if !vml]><span style='mso-ignore:
+vglayout;position:absolute;z-index:251660288;left:0px;margin-left:5px;
+margin-top:0px;width:150px;height:28px'><img width=150 height=28
+src="1%20ОСНОВНЫЕ%20КОМАНДЫ%20ОС%20UNIX.files/image003.png" v:shapes="Группа_x0020_2 Group_x0020_4 AutoShape_x0020_5 AutoShape_x0020_6 Group_x0020_7 AutoShape_x0020_8 AutoShape_x0020_9 Group_x0020_10 AutoShape_x0020_11 AutoShape_x0020_12 AutoShape_x0020_13"></span><![endif]><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t120" coordsize="21600,21600" o:spt="120" path="m10800,qx,10800,10800,21600,21600,10800,10800,xe">
+ <v:path gradientshapeok="t" o:connecttype="custom" o:connectlocs="10800,0;3163,3163;0,10800;3163,18437;10800,21600;18437,18437;21600,10800;18437,3163"
+  textboxrect="3163,3163,18437,18437"/>
+</v:shapetype><v:shape id="Блок-схема_x003a__x0020_узел_x0020_1" o:spid="_x0000_s1026"
+ type="#_x0000_t120" style='position:absolute;left:0;text-align:left;
+ margin-left:44.8pt;margin-top:5.2pt;width:7.6pt;height:7.15pt;z-index:251659264;
+ visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+ mso-height-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;
+ mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;
+ mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:text;
+ mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+ mso-height-relative:page;v-text-anchor:top' o:gfxdata="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
+" filled="f" stroked="f"/><![endif]--><span style='color:black'><span
+style='mso-spacerun:yes'>                   </span><span
+style='mso-spacerun:yes'>    </span><i><span
+style='mso-spacerun:yes'>       </span><span
+style='mso-spacerun:yes'>                                      </span><span
+style='mso-spacerun:yes'>  </span></i><span style='mso-spacerun:yes'> </span>.<i><o:p></o:p></i></span></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><span style='color:black'>В табл. 1 приведены основные
+команды системы<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:136.6pt 281.3pt;background:white;
+mso-layout-grid-align:none;text-autospace:none'><span style='color:black'><span
+style='mso-spacerun:yes'> </span><span style='mso-tab-count:5'>                                                                                                      </span>Таблица
+1<span style='mso-tab-count:2'>           </span><o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid black .5pt;
+ mso-yfti-tbllook:160;mso-padding-alt:0cm 2.85pt 0cm 2.85pt;mso-border-insideh:
+ .5pt solid black;mso-border-insidev:.5pt solid black'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Команда<o:p></o:p></span></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span style='color:black'>Аргументы/ключи<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span style='color:black'>Пример<o:p></o:p></span></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span style='color:black'>Описание<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>dir</span></i></b></span><b><i><span style='color:black'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>каталог<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>dir</span></i></b></span><b><i><span style='color:black'> <o:p></o:p></span></i></b></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>dir</span></i></b></span><b><i><span style='color:black'><span
+  style='mso-spacerun:yes'>  </span>/</span></i></b><b><i><span lang=EN-US
+  style='color:black;mso-ansi-language:EN-US'>home</span></i></b><span
+  style='color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Выводит на консоль содержимое каталога <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>ls</span></i></b></span><b><i><span style='color:black'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  style='color:black'>-</span></i></b><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'>all</span><span style='color:black'> <o:p></o:p></span></i></b></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>и другие<span style='mso-spacerun:yes'>  </span>(см. </span><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>man</span><span
+  style='color:black'>)<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>ls</span></i></b></span><b><i><span style='color:black'> -</span></i></b><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>all</span><span
+  style='color:black'> <o:p></o:p></span></i></b></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  style='color:black'><o:p>&nbsp;</o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Выводит на консоль содержимое каталога <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>ps</span></i></b></span><b><i><span style='color:black'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  style='color:black'>-</span></i></b><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'>a</span><span style='color:black'><o:p></o:p></span></i></b></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  style='color:black'>-</span></i></b><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'>x</span></i></b><span style='color:black'><span
+  style='mso-spacerun:yes'>   </span>и другие (см. </span><span lang=EN-US
+  style='color:black;mso-ansi-language:EN-US'>man</span><span style='color:
+  black'>)<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>ps</span></i></b></span><b><i><span style='color:black'> -</span></i></b><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>a</span><span
+  style='color:black'><o:p></o:p></span></i></b></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  style='color:black'><o:p>&nbsp;</o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Выводит на консоль список<span style='mso-spacerun:yes'> 
+  </span>процессов<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>mkdir</span></i></b></span><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>имя каталога<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>mkdir</span></i></b></span><b><i><span lang=EN-US style='color:black'>
+  </span></i></b><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'><span style='mso-spacerun:yes'> </span>stud11<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Создает каталог<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>rmdir</span></i></b></span><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>имя каталога<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>rmdir</span></i></b></span><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'> stud11</span><span style='color:black'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Удаляет каталог<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>rm</span></i></b></span><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'> <o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>файл<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>rm</span></i></b></span><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'> myfile1</span><span style='color:black'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Удаляет </span><span style='color:black;mso-ansi-language:
+  EN-US'><span style='mso-spacerun:yes'> </span></span><span style='color:black'>файл<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>mv<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>файл</span><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span><span
+  class=SpellE><span style='color:black'>новое_имя</span></span><span
+  style='color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>mv myfile1 myf1</span><span
+  style='color:black'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Переименование файла<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>cat <o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>файл<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>cat 1.txt<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Вывод файла на консоль<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>cd<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>имя каталога<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>cd home<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Переход по каталогам<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>grep</span></i></b></span><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>(см. </span><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'>man</span><span style='color:black'>)<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span style='color:black'>grep</span></i></b></span><b><i><span
+  style='color:black'> &quot;^a&quot; &quot;words.txt&quot;</span></i></b><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Пои<span class=GramE>ск стр</span>оки в файле<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>kill<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>pid</span></i></b></span><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'> </span><span style='color:black'>процесса<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>kill 12045<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Уничтожает процесс<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>top<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  style='color:black'><o:p>&nbsp;</o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Выводит на консоль список<span style='mso-spacerun:yes'> 
+  </span>процессов<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>htop</span></i></b></span><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  style='color:black'><o:p>&nbsp;</o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Выводит на консоль полный список запущенных<span
+  style='mso-spacerun:yes'>  </span>процессов<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>su</span></i></b></span><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  style='color:black'><o:p>&nbsp;</o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Переход в режим </span><span lang=EN-US style='color:
+  black;mso-ansi-language:EN-US'>root<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span style='color:black'>chmod</span></i></b></span><b><i><span
+  style='color:black'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><span style='color:black'>права_доступа</span></span><span
+  style='color:black'> файл <o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span style='color:black'>chmod</span></i></b></span><b><i><span
+  style='color:black'> 777 1.</span></i></b><b><i><span lang=EN-US
+  style='color:black;mso-ansi-language:EN-US'>txt<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Изменение прав доступа к файлам<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>mount <o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>устройство каталог</span><span lang=EN-US
+  style='color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>mount /<span
+  class=SpellE>dev</span>/<span class=SpellE>cdrom</span> /<span class=SpellE>MyCD</span><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Монтирование устройств <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>dd</span></i></b></span><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>if=</span></i></b><span
+  style='color:black'>файл</span><span style='color:black;mso-ansi-language:
+  EN-US'> <b><i><span lang=EN-US>of=</span></i></b></span><span
+  style='color:black'>файл</span><span style='color:black;mso-ansi-language:
+  EN-US'> <span class=SpellE><b><i><span lang=EN-US>bs</span></i></b></span><b><i><span
+  lang=EN-US>=n count=n</span></i></b><span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>dd</span></i></b></span><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'> if=/<span class=SpellE>dev</span>/hda1 <o:p></o:p></span></i></b></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>of=/<span
+  class=SpellE>F.bin</span> <span class=SpellE>bs</span>=512 count=1<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Копирование побайтное<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>ln</span></i></b></span><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'> <o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>файл1 файл2</span><span
+  style='color:black'><o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  style='color:black'>-</span></i></b><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'>l<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>ln</span></i></b></span><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'> файл1 файл2<o:p></o:p></span></i></b></p>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>ln</span></i></b></span><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'> –l файл1 файл2<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Создать жёсткую или символическую ссылку на файл<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  style='color:black'><span style='mso-spacerun:yes'> </span></span></i></b><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>uname</span></i></b></span><b><i><span style='color:black'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>-a<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>uname</span></i></b></span><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'> –a</span><span style='color:black'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Информация о системе <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span style='color:black'>find</span></i></b></span><b><i><span
+  style='color:black'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span style='color:black'>find</span></i></b></span><span
+  style='color:black'> </span><span class=SpellE><span lang=EN-US
+  style='color:black;mso-ansi-language:EN-US'>файл</span></span><span
+  style='color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  class=SpellE><b><i><span style='color:black'>find</span></i></b></span><b><i><span
+  style='color:black'> </span></i></b><b><i><span lang=EN-US style='color:black;
+  mso-ansi-language:EN-US'>/home a1.txt</span><span style='color:black'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Поиск файлов<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:21'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>man<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>man <span
+  class=SpellE>fgetc</span><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Справка по системе<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22;mso-yfti-lastrow:yes'>
+  <td width=84 valign=top style='width:63.05pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>info<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=197 valign=top style='width:147.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .5pt;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><i><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>info <span
+  class=SpellE>fgetc</span><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=207 valign=top style='width:155.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 2.85pt 0cm 2.85pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='color:black'>Справка по системе<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='text-transform:uppercase'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:35.4pt;background:white;mso-layout-grid-align:
+none;text-autospace:none'><span class=SpellE>Linux</span> и <span class=SpellE>Windows</span>
+используют различные файловые системы для хранения и организации доступа к
+информации на дисках. В <span class=SpellE>Linux</span> используются файловые
+системы- <b><i>Ext2/Ext3</i></b>,<b><i> </i></b><span class=SpellE><b><i><span
+lang=EN-US style='mso-ansi-language:EN-US'>RaiserFS</span></i></b></span><b><i>,
+</i></b><b><i><span lang=EN-US style='mso-ansi-language:EN-US'>FFS</span><span
+lang=EN-US> <span style='mso-spacerun:yes'> </span></span></i></b>и другие. Все
+файловые системы имеют поддержку <span class=SpellE><b><i>журналирования</i></b></span>.
+<span class=SpellE><b><i>Журналируемая</i></b></span> файловая система сначала
+записывает изменения, которые она будет проводить в отдельную часть файловой
+системы (<b><i>журнал</i></b>) и только потом вносит необходимые изменения в
+остальную часть файловой системы. После удачного выполнения всех транзакций,
+записи удаляются из <b><i>журнала</i></b>. Это обеспечивает лучшее сохранение
+целостности системы и уменьшает вероятность потери данных. Следует отметить,
+что <span class=SpellE><b><i>Linux</i></b></span> поддерживает доступ к <span
+class=SpellE><b><i>Windows</i></b></span>-разделам. <o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:35.4pt;background:white;mso-layout-grid-align:
+none;text-autospace:none'>Файловая система <span class=SpellE><b><i>Linux</i></b></span>
+имеет лишь один корневой каталог, который обозначается косой чертой<span
+class=GramE> ( <b><i>/ </i></b>). </span>В файловой структуре <span
+class=SpellE><b><i>Linux</i></b></span> нет дисков <b><i><span lang=EN-US
+style='mso-ansi-language:EN-US'>A</span>, </i></b><b><i><span lang=EN-US
+style='mso-ansi-language:EN-US'>B</span>, </i></b><b><i><span lang=EN-US
+style='mso-ansi-language:EN-US'>C</span>, </i></b><b><i><span lang=EN-US
+style='mso-ansi-language:EN-US'>D</span></i></b> ….,<span
+style='mso-spacerun:yes'>  </span>а есть только каталоги. В <span class=SpellE><b><i>Linux</i></b></span>
+различаются прописные и строчные буквы в командах, именах файлов и каталогов. В
+<span class=SpellE><b><i>Windows</i></b></span> у каждого файла существует лишь
+одно имя, в <span class=SpellE><b><i>Linux</i></b></span> их может быть много.
+Это – «<b><i>жесткие</i></b>» ссылки, которые указывают непосредственно на
+индексный дескриптор файла. Жесткая ссылка – это один из принципов организации
+файловой системы <span class=SpellE><b><i>Linux</i></b></span>.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:35.4pt;background:white;mso-layout-grid-align:
+none;text-autospace:none'>Структура каталогов ОС <span class=SpellE><b><i>Linux</i></b></span><b><i>
+</i></b>представлена в табл. 1. Есть также несколько полезных сокращений для
+имен каталогов: <o:p></o:p></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='text-align:left;mso-list:l0 level1 lfo1;tab-stops:
+     list 36.0pt;background:white;mso-layout-grid-align:none;text-autospace:
+     none'>Одиночная точка<span class=GramE> (<b>.</b>) </span>обозначает
+     текущий рабочий каталог.<o:p></o:p></li>
+ <li class=MsoNormal style='text-align:left;mso-list:l0 level1 lfo1;tab-stops:
+     list 36.0pt;background:white;mso-layout-grid-align:none;text-autospace:
+     none'>Две точки<span class=GramE> (<b>..</b>) </span>обозначают
+     родительский каталог текущего рабочего.<o:p></o:p></li>
+ <li class=MsoNormal style='text-align:left;mso-list:l0 level1 lfo1;tab-stops:
+     list 36.0pt;background:white;mso-layout-grid-align:none;text-autospace:
+     none'>Тильда<span class=GramE> (<b>~</b>) </span>обозначает домашний
+     каталог пользователя (обычно это каталог, который является текущим рабочим
+     при запуске <span class=SpellE>Bash</span>).<o:p></o:p></li>
+</ul>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:354.0pt;text-indent:35.4pt;background:
+white;mso-layout-grid-align:none;text-autospace:none'>Таблица <span lang=EN-US
+style='mso-ansi-language:EN-US'>1<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid black .5pt;
+ mso-yfti-tbllook:160;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid black;mso-border-insidev:.5pt solid black'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<o:p></o:p></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'>Корневой каталог<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<span class=SpellE>bin</span>
+  <o:p></o:p></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'>Содержит исполняемые файлы самых необходимых для работы
+  системы программ. Каталог <b><i>/<span class=SpellE>bin</span></i></b> не
+  содержит подкаталогов. <o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<span class=SpellE>boot</span>
+  </i></b><b><i><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'>Здесь находятся само ядро системы (файл <span
+  class=SpellE><b><i>vmlinuz</i></b></span>-...) и файлы, необходимые для его
+  загрузки.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<span class=SpellE>dev</span>
+  </i></b><b><i><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'>Каталог <b><i>/<span class=SpellE>dev</span></i></b>
+  содержит файлы устройств (драйверы).<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<span class=SpellE>etc</span>
+  </i></b><b><i><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'>Это каталог конфигурационных файлов, т. е. файлов,
+  содержащих информацию о настройках системы (например, настройки программ). <o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<span class=SpellE>home</span><span
+  style='mso-spacerun:yes'>  </span><o:p></o:p></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'>Содержит домашние каталоги пользователей системы.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<span class=SpellE>lib</span>
+  <o:p></o:p></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'>Здесь находятся библиотеки (функции, необходимые многим
+  программам).<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<span class=SpellE>media</span>
+  </i></b><b><i><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'>Содержит подкаталоги, которые используются как точки
+  монтирования для сменных устройств (CD-<span class=SpellE>ROM'ов</span>, <span
+  class=SpellE>floppy</span>-дисков и др.)<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<span class=SpellE>mnt</span>
+  </i></b><b><i><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'>Данный каталог (или его подкаталоги) может служить
+  точкой монтирования для временно подключаемых файловых систем.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<span class=SpellE>proc</span><span
+  style='mso-spacerun:yes'>  </span></i></b><b><i><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'>Содержит файлы с информацией о выполняющихся в системе
+  процессах.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<span class=SpellE>root</span>
+  </i></b><b><i><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'>Это домашний каталог администратора системы.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<span class=SpellE>sbin</span>
+  </i></b><b><i><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'>Содержит исполняемые программы, как и каталог <b><i>/<span
+  class=SpellE>bin</span></i></b>. Однако использовать программы, находящиеся в
+  этом каталоге может только администратор системы (<span class=SpellE><b><i>root</i></b></span>).<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<span class=SpellE>tmp</span>
+  </i></b><b><i><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'><span style='mso-spacerun:yes'> </span>Каталог для
+  временных файлов, хранящих промежуточные данные, необходимых для работы тех
+  или иных программ, и удаляющиеся после завершения работы программ.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<span class=SpellE>usr</span>
+  </i></b><b><i><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'>Каталог для большинства программ, которые не имеют
+  значения для загрузки системы. Структура этого каталога фактически дублирует
+  структуру корневого каталога.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14;mso-yfti-lastrow:yes'>
+  <td width=83 valign=top style='width:62.1pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=right style='text-align:right;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><b><i>/<span class=SpellE>var</span>
+  </i></b><b><i><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=556 valign=top style='width:417.35pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+  text-autospace:none'>Содержит данные, которые были получены в процессе работы
+  одних программ и должны быть переданы другим, и файлы журналов со сведениями
+  о работе системы.<o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

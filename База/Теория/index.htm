@@ -1,0 +1,137 @@
+<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Теория по дисциплине "ОСиСП ч.1"</title>
+<base target="_top">
+</HEAD><BODY onMouseMove="tryShow()">
+
+<!--MENUSTART (don`t forget to set onMouseMove="tryShow()" in BODY!)-->
+<STYLE>
+.TABLE{
+Width:            600px;                    /*Ширина меню в пикселах*/
+Font-family:      Tahoma, Verdana, sans-serif;          /*Шрифт*/
+Font-size:        14;                     /*Размер шрифта в пунктах*/
+Border-right:     #808080 transparent 0px;  /*Рамка*/
+Border-bottom:    #808080 transparent 0px;
+Border-left:      #808080 solid 1px;
+Border-top:       #808080 solid 1px;
+Filter:           Alpha(opacity=90,style=0);/*Непрозрачность меню в процентах*/
+}
+A {
+	color: #6495ED;
+	text-decoration: none;
+}
+
+A:HOVER {
+	color: #115ADB;
+	text-decoration: underline;
+}
+var {text-align: right; text-transform: none; font-family: Tahoma, Verdana, sans-serif;  color: #FFFAFA;   margin-top: 0; 	font: normal;  font-style: normal;  font-size: 90%; font-variant: normal;  font-weight: normal;    }
+.black { margin-left: 10px;  color: Black;   }
+.hvr{
+background-color: #FFFBFB;                  /*Цвет фона активного пункта меню*/
+Color:            #000000;                  /*Цвет текста активного пункта меню*/
+Border-top:       #808080 transparent 0px;  /*Рамка*/
+Border-left:      #808080 transparent 0px;
+Border-right:     #808080 solid 1px;
+Border-bottom:    #808080 solid 1px;
+Cursor:           hand;                     /*Курсор*/
+Text-indent:      10px;                     /*Отступ от края таблицы*/
+}
+.out{
+background-color: #E0E0E0;                  /*Цвет фона неактивного пункта меню*/
+Color:            #000000;                  /*Цвет текста неактивного пункта меню*/
+Border-top:       #808080 transparent 0px;  /*Рамка*/
+Border-left:      #808080 transparent 0px;
+Border-right:     #808080 solid 1px;
+Border-bottom:    #808080 solid 1px;
+Cursor:           hand;                     /*Курсор*/
+Text-indent:      10px;                     /*Отступ от края таблицы*/
+}
+SMALL{
+Text-indent:      7px;
+Font-size:        9pt;
+Color:            #A0A0A0;
+}
+</STYLE>
+<SCRIPT Language="JavaScript">
+<!--
+//Положение
+function tryShow()
+{if ((content.style.visibility == "hidden") &&
+(event.x < 10)
+)
+{ content.style.left = event.offsetX + 5;
+content.style.top = event.offsetY - 25;
+showcont();
+}
+}
+//Появление оглавления
+function showcont(){
+content.style.visibility = "visible";
+}
+//Исчезновение
+function hidecont(){
+content.style.visibility = "hidden";
+}
+//-->
+</SCRIPT>
+
+<DIV Id="content" Style="visibility:hidden; position:absolute;">
+<TABLE CellPadding="0" CellSpacing="0" border="0" onMouseOver="showcont()" onMouseOut="hidecont()" Width="600" Class="table">
+<TBODY>
+<TR><TD onMouseOver="this.className='hvr'" onMouseOut= "this.className='out'" Class="out"><B>Содержание ЭУМК</B></TR>
+<TR><TD onMouseOver="this.className='hvr'" onMouseOut= "this.className='out'" Class="out"><B>Перейти:</B>&nbsp;<CENTER><A HREF="index.htm"><IMG SRC="./Теория/images/eumk_contents.gif" ALT="Оглавление ЭУМК (эта страница)" BORDER=0 WIDTH=20 HEIGHT=20></A>&nbsp;<A HREF="./Программа/index.htm"><IMG SRC="./Теория/images/program.gif" ALT="Перейти к программе дисциплины" BORDER=0 WIDTH=75 HEIGHT=20></A><A HREF="./Теория/index.htm"><IMG SRC="./Теория/images/theory.gif" ALT="Перейти к теоретическим материалам" BORDER=0 WIDTH=75 HEIGHT=20></A><A HREF="./Практика/index.htm"><IMG SRC="./Теория/images/prakt.gif" ALT="Перейти к материалам для практических/лабораторных занятий" BORDER=0 WIDTH=75 HEIGHT=20></A><A HREF="./Контроль_знаний/index.htm"><IMG SRC="./Теория/images/control.gif" ALT="Перейти к разделу проверки знаний" BORDER=0 WIDTH=75 HEIGHT=20></A>&nbsp;<A HREF="./Программа/help.htm"><IMG SRC="./Теория/images/help.gif" ALT="Перейти к разделу помощи и информации о продукте" BORDER=0 WIDTH=20 HEIGHT=20></A></TR>
+</TBODY>
+</TABLE></DIV>
+<!--MENUEND-->
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../Оболочка/images/background.jpg">
+  <tr> 
+    <td width="13%" rowspan=3 align="center" ><img src="../Оболочка/images/logo_new.jpg" width=117 height=137 align="middle"></td>
+  <tr> 
+    <td width="70%" colspan=2 align="center" valign="middle"> <H1 align="center" >
+Электронный  ресурс по учебной дисциплине<BR>
+        "ОПЕРАЦИОННЫЕ СИСТЕМЫ И СИСТЕМНОЕ ПРОГРАММИРОВАНИЕ (ч.1) "<BR>
+для специальности: </H1>
+    1 - 40 01 01 «Программное обеспечение информационных технологий» </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../index.htm">Оглавление</A> | <A HREF="../Программа/index.htm" TARGET=_new TITLE="Программа курса (Откроется в новом окне)">Программа</A> |  <A HREF="../Теория/index.htm">Теория</A>  | <A HREF="../Практика/index.htm">Практика</A> | <A HREF="../Контроль_знаний/index.htm">Контроль знаний</A> | <A HREF="../Об авторах/index.htm">Об авторах</A></var></var> </td>
+  <tr>
+</table>
+<P class="margined"><FONT SIZE=4><CENTER>
+</CENTER>
+</FONT>
+
+<table border="0" cellpadding="0" cellspacing="0">
+    <td width="125"><p>
+	    <a href="content/lk1/Тема1.htm" >Тема 1 </a><br>
+            <a href="content/lk2/Тема2.htm" >Тема 2</a><br>
+	    <a href="content/lk3/Тема3.htm" >Тема 3 </a><br>
+            <a href="content/lk4/Тема4.htm" >Тема 4 </a><br>
+            <a href="content/lk5/Тема5.htm" >Тема 5 </a><br>
+            <a href="content/lk6/Тема6.htm" >Тема 6 </a><br>
+            <a href="content/lk7/Тема7.htm" >Тема 7 </a><br>
+            <a href="content/lk8/Тема8.htm" >Тема 8 </a><br>
+      	    <a href="content/lk9/Тема9.htm" >Тема 9 </a><br>
+            <a href="content/lk10/Тема10.htm" >Тема 10 </a><br>
+            <a href="content/lk11/Тема11.htm" >Тема 11 </a><br>
+            <a href="content/lk12/Тема12.htm" >Тема 12 </a><br>
+            <a href="content/lk13/Тема13.htm" >Тема 13 </a><br>
+            <a href="content/lk14/Тема14.htm" >Тема 14 </a><br>
+            <a href="content/mu/Методические рекомендации.htm" >Методические рекомендации </a><br>
+        <p><a href="content/lit/Литература.htm" target="_new">Литература</a></p>
+        
+    </table>
+
+<a name="bottom">&nbsp;</a>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B>(С)  БГУИР</var></td>
+  </tr>
+</table>
+</BODY></HTML>
