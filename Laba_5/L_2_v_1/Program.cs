@@ -18,7 +18,7 @@ namespace L_2_v_1
 				_environmentProcessorCount = (byte)Environment.ProcessorCount;
 				Initialization(args);
 			}
-			catch (Exception e)
+			catch (ArgumentNullException e)
 			{
 				Console.WriteLine($"Ошибка ввода аргументов программы.\n{e.Message}");
 			}
@@ -35,7 +35,7 @@ namespace L_2_v_1
 				Console.Write("Введите путь к папке для шифрования:");
 				_folderPath = Console.ReadLine();
 
-				Console.Write($"Доступно потоков:{Environment.ProcessorCount}\n" +
+				Console.Write($"Доступно потоков:{_environmentProcessorCount}\n" +
 					$"Введите число одновременно работающих потоков для шифрования файлов:");
 				_coreAvailable = Convert.ToByte(Console.ReadLine());
 
@@ -47,7 +47,8 @@ namespace L_2_v_1
 
 		private static void CryptFiles()
 		{
-			var crypto = new CrypteFile(_folderPath, _coreAvailable, _environmentProcessorCount);
+			var crypto = new CrypteFile(_folderPath, _coreAvailable);
+			crypto.CryptFilesInFolder();
 		}
 
 		private static bool IsValidProgramArgument(string[] args)
@@ -59,7 +60,7 @@ namespace L_2_v_1
 		{
 			var invalidParams = new List<string>();
 
-			if (_coreAvailable <= 0 || _coreAvailable > Environment.ProcessorCount)
+			if (_coreAvailable <= 0 || _coreAvailable > _environmentProcessorCount)
 			{
 				invalidParams.Add(nameof(_coreAvailable));
 			}

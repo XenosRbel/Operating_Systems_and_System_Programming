@@ -41,6 +41,11 @@ namespace L_1_v_2
 
 		private static void CopyFile(string sourceFilePath, string destFilePath)
 		{
+			if (File.Exists(destFilePath))
+			{
+				return;
+			}
+
 			var dirPath = new FileInfo(destFilePath).Directory.FullName;
 			if (!Directory.Exists(dirPath))
 			{
