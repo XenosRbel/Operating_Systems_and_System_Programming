@@ -1,4 +1,4 @@
-﻿namespace L_3_t_6
+﻿namespace L_4_t_1
 {
 	public interface ICalculatorInfo
 	{

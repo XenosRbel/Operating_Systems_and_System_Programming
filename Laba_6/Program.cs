@@ -16,7 +16,7 @@ namespace L_3_t_6
 			_folderPath = Console.ReadLine();
 
 			Console.Write($"Доступно потоков:{_environmentProcessorCount}\n" +
-				$"Введите число одновременно работающих потоков для шифрования файлов:");
+				$"Введите число одновременно работающих потоков:");
 			var coreAvailable = Console.ReadLine();
 			_coreAvailable = Convert.ToByte(string.IsNullOrWhiteSpace(coreAvailable) ? throw new ArgumentNullException(nameof(coreAvailable)) : coreAvailable );
 
